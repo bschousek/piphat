@@ -4,7 +4,7 @@ The PiPhat board is designed to perform as a RAMPS style interface between Machi
 
 ## System diagram
 
-![diagram](system.svg)
+![diagram](system.png)
 
 ### IO processor
 
