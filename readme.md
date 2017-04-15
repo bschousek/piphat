@@ -1,4 +1,6 @@
-# PiPhat Raspberry Pi to 3D Printer interface
+# PiPhat
+
+## Raspberry Pi to 3D Printer interface
 
 The PiPhat board is designed to perform as a RAMPS style interface between Machinekit and a 3D printer via the 40 pin GPIO connector of a Raspberry Pi. Step generation is not to be provided by the Machinekit software stepgen routines, but rather by a DMA generated waveform. The DMA waveform should provide highly reduced jitter compared to the software stepgen.
 
