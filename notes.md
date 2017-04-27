@@ -5,3 +5,5 @@ Machinekit architecture discussion [link](http://www.machinekit.io/docs/code/Cod
 yay found protobuf emcmot commands [link](https://github.com/machinekit/machinekit/blob/master/src/machinetalk/proto/src/machinetalk/protobuf/motcmds.proto)
 
 command line interface prototype [link](https://groups.google.com/forum/#!searchin/machinekit/protobuf$20example|sort:relevance/machinekit/Tefjj_I6DE8/0IDOmliWDgYJ)
+
+Getting Python to play with C/C++ in machinekit [link](https://groups.google.com/forum/#!searchin/machinekit/protobuf$20example|sort:relevance/machinekit/PUnrxLWhPnw/TjUE09TmCgAJ)
