@@ -4,6 +4,10 @@
 
 * I'm using 'keystick' by setting "display=keystick" instead of "display=axis" in the sim.ini file
 
+* To start machinekit with the config you type 'machinekit keystick.ini' from the directory where the ini file is located
+
+* Exit keystick with ctrl-c
+
 * In Gnome terminal in order to access the F1 key you need to disable keyboard shortcuts (Edit->Preferences->Shortcuts and uncheck the enable shortcuts box)
 
 * Before you can do anything with the gui you need to
