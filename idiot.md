@@ -35,3 +35,8 @@ G0 X1 Y1 Z2
 * Slow
 
 G1 X2 F1
+
+* In another command terminal execute halcmd -f -k
+* use stuff from [link](http://www.machinekit.io/docs/man/man1/halcmd/)
+
+
