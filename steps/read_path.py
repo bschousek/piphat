@@ -37,6 +37,7 @@ class Axis:
         if newposition != self.position:
             delay=int(tdelta/(abs(newposition-self.position)))
             for s in steps:
+                
                 p=int(s)
                 #logging.info("s %r p %r" %(s,p))
                 wave.append(pigpio.pulse(1<<self.pinstep,0,5))
