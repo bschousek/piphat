@@ -1,0 +1,9 @@
+loadrt trivkins
+
+# motion controller, get name and thread periods from ini file
+# trajectory planner
+loadrt tp
+loadrt [EMCMOT]EMCMOT servo_period_nsec=[EMCMOT]SERVO_PERIOD num_joints=[TRAJ]AXES tp=tp kins=trivkins
+
+
+loadrt motmod servo_period_nsec=1000000 tp=tp kins=trivkins num_joints=3

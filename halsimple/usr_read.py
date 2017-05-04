@@ -8,7 +8,7 @@
 import linuxcnc
 s = linuxcnc.stat()
 s.poll()
-for i in [0,1,2]:
+for i in [0,1]:
 	print ('Axis %i output: %f' %(i,s.axis[i]['output']))
 	print ('Axis %i ferror: %f' %(i,s.axis[i]['ferror_current']))
 	print ('Axis %i velocity: %f' %(i,s.axis[i]['velocity']))
