@@ -4,6 +4,10 @@
 
 * I'm using 'keystick' by setting "display=keystick" instead of "display=axis" in the sim.ini file
 
+* To start machinekit with the config you type 'machinekit keystick.ini' from the directory where the ini file is located
+
+* Exit keystick with ctrl-c
+
 * In Gnome terminal in order to access the F1 key you need to disable keyboard shortcuts (Edit->Preferences->Shortcuts and uncheck the enable shortcuts box)
 
 * Before you can do anything with the gui you need to
@@ -31,3 +35,8 @@ G0 X1 Y1 Z2
 * Slow
 
 G1 X2 F1
+
+* In another command terminal execute halcmd -f -k
+* use stuff from [link](http://www.machinekit.io/docs/man/man1/halcmd/)
+
+
