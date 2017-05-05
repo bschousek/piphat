@@ -100,17 +100,18 @@ def multirun(n=1000):
 #steps, current_time=calcsteps()
 
 
-prof=True
-if prof:
-    cProfile.run('multirun(1000)')
-else:
-    sf=calcsteps(current_time, speedparms)
-    waves=build_wave(sf['stepdelta'])
-    print(waves)
-    print sf
-    print(type(sf))
-    sss=[s for s in sf]
-    print(len(sss))
+if __name__ == "__main__":
+    prof=True
+    if prof:
+        cProfile.run('multirun(1000)')
+    else:
+        sf=calcsteps(current_time, speedparms)
+        waves=build_wave(sf['stepdelta'])
+        print(waves)
+        print sf
+        print(type(sf))
+        sss=[s for s in sf]
+        print(len(sss))
 
 
 
