@@ -3,7 +3,8 @@ import logging
 logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 from time import sleep
 import pigpio
-pi=pigpio.pi()
+#pi=pigpio.pi()
+pi=pigpio.pi('moby.local')
 import numpy as np
 #logger=logging.getLogger()
 
@@ -57,9 +58,9 @@ class Axis:
 
 
 path=[
-[500,500,1e5],
-[1000,1000,1e5],
-[1500,1500,1e5],
+[500,0,1e5],
+[1000,0,1e5],
+[1500,0,1e5],
 ]
 #[50,0,1e5],
 #[50,50,1e5],
