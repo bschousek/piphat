@@ -10,11 +10,12 @@ import numpy as np
 
 class Axis:
 
-    def __init__(self, pinstep, pindir, axis_id, position=0):
+    def __init__(self, pinstep, pindir, axisen, axis_id, position=0):
         self.position=position
         self.pinstep=pinstep
         self.pindir=pindir
         self.axis_id=axis_id
+        self.axisen=axisen
         pi.set_mode(pinstep, pigpio.OUTPUT)
         pi.set_mode(pindir, pigpio.OUTPUT)
 

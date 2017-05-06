@@ -34,7 +34,7 @@ def build_wave(steps, dirpin, steppin):
     wave.append(pigpio.pulse(1<<dirpin,0,0) if steps['stepdir'] else pigpio.pulse(0,1<<dirpin,0))
     logging.debug('build wave 1 %r' %wave)
     for step in range(int(steps['steps'])):
-        wave=wave+[pigpio.pulse(0,1<<steppin,1), pigpio.pulse(0,1<<steppin,5), pigpio.pulse(1<<steppin,0,steps['period'])]
+        wave=wave+[pigpio.pulse(0,1<<steppin,1), pigpio.pulse(0,1<<steppin,5), pigpio.pulse(1<<steppin,0,steps['period']-6)]
     return wave
     wave=[dipulse]
     
