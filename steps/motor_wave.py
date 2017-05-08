@@ -1,5 +1,5 @@
 from __future__ import division
-from math import floor
+from math import floor, ceil
 import sys
 import logging
 logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
@@ -45,7 +45,10 @@ class Motor:
         #We need to calculate step interval in microseconds (for pigpio)
         
         # So Step interval is 1/velocity (steps/second) * 1e6(microseconds/second)
-        step_interval=abs(floor(1e6/velocity))
+        try:
+            step_interval=abs(ceil(1e6/velocity))
+        except ZeroDivisionError:
+            step_interval=self.periodns
         logging.debug("step interval is %i" %step_interval)
         # Number of steps that will fit in periodns is periodns (ns) * (1000 us/ns) / step_interval (us/step)
         step_count=floor(self.periodns/1000/step_interval)
