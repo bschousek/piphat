@@ -2,7 +2,7 @@
 import hal
 import time
 import logging
-logging.basicConfig(filename='passthrough.log', level=logging.DEBUG)
+logging.basicConfig(filename='passthrough.log', level=logging.INFO)
 #logger=logging.getLogger()
 h = hal.component("passthrough")
 h.newpin("xvel-cmd", hal.HAL_FLOAT, hal.HAL_IN)
