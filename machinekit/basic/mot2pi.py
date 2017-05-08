@@ -9,9 +9,9 @@ import motor_wave as mw
 import pigpio
 
 pi=pigpio.pi('moby.local')
-xaxis=mw.Motor(pinstep=12, pindir=6, axisen=22, periodns=1000000, axis_id='X', pi=pi)
+xaxis=mw.Motor(pinstep=12, pindir=6, axisen=22, periodns=10000000, axis_id='X', pi=pi)
 xaxis.enable()
-yaxis=mw.Motor(pinstep=24, pindir=23, axisen=22, periodns=1000000, axis_id='Y', pi=pi)
+yaxis=mw.Motor(pinstep=24, pindir=23, axisen=22, periodns=10000000, axis_id='Y', pi=pi)
 yaxis.enable()
 
 logging.basicConfig(filename='mot2pi.log', level=logging.DEBUG)
