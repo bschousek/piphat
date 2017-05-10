@@ -15,3 +15,4 @@ trajectory planner source code [link](https://github.com/machinekit/machinekit/t
 
 trajectory planner notes [link](https://github.com/machinekit/machinekit/issues/476)
 
+Some notes on how to link hal component [link](https://groups.google.com/forum/#!topic/machinekit/7odQUZX9SDM)
