@@ -1,0 +1,81 @@
+component pp_gpio "Raspberry PI digital output for Machinekit via pigpio library";
+    // Input Pins
+
+
+pin out bit ##.input[pincount];
+pin in bit ##.output[pincount];
+
+pin io bit ##.invert[pincount];
+pin io bit ##.dowrite[pincount]=1;
+pin io unsigned ##.pinmode[pincount]=0; //default to input
+pin io unsigned ##.bcm[pincount];
+pin io unsigned ##.pud[pincount]=0;
+
+
+pin io unsigned pi_instance;
+
+instanceparam int pincount = 28;
+option MAXCOUNT 28;
+
+
+
+license "GPL";
+author "Brian Schousek";
+
+function _ ;
+
+option extra_inst_setup yes;
+//option extra_inst_cleanup yes;
+
+;;
+#include <pigpiod_if2.h>
+
+FUNCTION(_) {
+	int i;
+	unsigned mytemp;
+
+	for (i=0 ; i < local_pincount ; i++) {
+		set_mode(pi_instance, _bcm(i), _pinmode(i));
+		set_pull_up_down(pi_instance, _bcm(i), _pud(i));
+		if (_pinmode(i) == 0) {
+
+			mytemp= gpio_read(pi_instance, _bcm(i));
+			if (_invert(i)) mytemp=!mytemp;
+			_input(i)=mytemp;
+			
+		}
+		else {
+			
+			mytemp=_output(i);
+			if (_invert(i)) mytemp=!mytemp;
+			_input(i)=mytemp;
+			if (_dowrite(i)) {
+				gpio_write(pi_instance, _bcm(i), mytemp);
+				}
+			}
+		}
+	
+
+
+	
+	return 0;
+
+}
+
+EXTRA_INST_SETUP(){
+	
+
+	char host[]="moby.local";
+	char port[]="8888";
+	pi_instance=pigpio_start(host,port);
+	
+
+	
+ 
+
+}
+
+// EXTRA_INST_CLEANUP(){
+// 	pigpio_stop(pi_instance);
+
+// }

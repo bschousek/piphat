@@ -1,0 +1,130 @@
+component pp_stepgen "Raspberry PI digital output for Machinekit via pigpio library";
+    // Input Pins
+
+
+//pin out bit #.step[pincount];
+//pin out bit #.dir[pincount];
+
+
+pin in unsigned #.bcmdir[pincount];
+pin in unsigned #.bcmstep[pincount];
+pin in float #.velcmd[pincount];
+pin out signed #.poscmd[pincount];
+pin out signed #.posfb[pincount];
+pin out unsigned #.step_period[pincount];
+pin out unsigned #.step_count[pincount];
+pin io bit new_wave=0;
+pin io unsigned periodns=10000000;
+pin io unsigned pi_instance;
+
+instanceparam int pincount = 2;
+option MAXCOUNT 5;
+
+license "GPL";
+author "Brian Schousek";
+
+function _;
+/*function one_wave ;*/
+
+
+
+;;
+#include <pigpiod_if2.h>
+
+//struct gpioPulse_t wavebuild[];//=gpioPulse_t(0,0,0);
+gpioPulse_t wavebuild[600];
+
+
+FUNCTION(_) {
+	int i;
+	int n;
+	int wave_result;
+	//l	int wave[local_pincount];
+	int wave;
+	float fper;
+	unsigned mystep_period;
+	unsigned mystep_count;
+				
+	if (new_wave) {
+		rtapi_print_msg(RTAPI_MSG_DBG, "hw rev %x pp version %x pp if version %x", get_hardware_revision(pi_instance), get_pigpio_version(pi_instance), pigpiod_if_version());
+		//wave_add_new(pi_instance);
+		//wave_add_new(pi_instance);
+		wave_clear(pi_instance);
+		for (i=0 ; i<local_pincount ; i++) {
+			//velocity is steps/s
+			//Invert to get period in seconds
+			//calculate a period in microseconds
+			// then figure out how many of those periods (converted to ns) will fit in periodns (already in ns)
+
+
+			if (_velcmd(i) != 0) {
+				fper=(1/_velcmd(i));
+				mystep_period=fper*1e6;
+				mystep_count=periodns/(fper*1e9);
+				rtapi_print_msg(RTAPI_MSG_DBG, "wave add count %i period %i fper %f periodns %i",mystep_count, mystep_period, fper, periodns);
+				rtapi_print_msg(RTAPI_MSG_DBG, "wave add gpio %x bitmask %x mode %i",_bcmstep(i),1<<_bcmstep(i), get_mode(pi_instance, _bcmstep(i)));
+				
+				_step_period(i)=mystep_period;
+				_step_count(i)=mystep_count;
+				rtapi_print_msg(RTAPI_MSG_DBG, "wave add count %i period %i",mystep_count, mystep_period);
+				for (n=0; n<mystep_count; n++) {
+					//rtapi_print_msg(RTAPI_MSG_DBG, "wave add n %i count %i period %i",n,mystep_count, mystep_period);
+					wavebuild[2*n]=(gpioPulse_t){1<<_bcmstep(i), 0,15};
+					wavebuild[2*n+1]=(gpioPulse_t){0, 1<<_bcmstep(i), mystep_period-15};
+				}
+					//wave_result=wave_add_generic(pi_instance, mystep_count*2, wavebuild);
+				wave_result=wave_add_generic(pi_instance, mystep_count*2, wavebuild);
+					rtapi_print_msg(RTAPI_MSG_DBG, "add generic count %i %i %i",wave_result, n, mystep_count);
+					rtapi_print_msg(RTAPI_MSG_DBG, "wave max us %i actual us %i",wave_get_max_micros(pi_instance),wave_get_micros(pi_instance));
+					rtapi_print_msg(RTAPI_MSG_DBG, "wave max pulse %i actual pulse %i",wave_get_max_pulses(pi_instance),wave_get_pulses(pi_instance));
+					rtapi_print_msg(RTAPI_MSG_DBG, "wave max cbs %i actual cbs %i",wave_get_max_cbs(pi_instance),wave_get_cbs(pi_instance));
+			} 
+			else {
+				mystep_period=1;
+			}
+		}
+			rtapi_print_msg(RTAPI_MSG_DBG, "wave max us %i actual us %i",wave_get_max_micros(pi_instance),wave_get_micros(pi_instance));
+			rtapi_print_msg(RTAPI_MSG_DBG, "wave max pulse %i actual pulse %i",wave_get_max_pulses(pi_instance),wave_get_pulses(pi_instance));
+			wave=wave_create(pi_instance);
+			rtapi_print_msg(RTAPI_MSG_DBG, "wave max us %i actual us %i",wave_get_max_micros(pi_instance),wave_get_micros(pi_instance));
+			rtapi_print_msg(RTAPI_MSG_DBG, "wave max pulse %i actual pulse %i",wave_get_max_pulses(pi_instance),wave_get_pulses(pi_instance));
+			rtapi_print_msg(RTAPI_MSG_DBG, "wave id %i",wave);
+			//wave_result=wave_send_once(pi_instance, wave);
+			wave_result=wave_send_repeat(pi_instance, wave);
+			
+			rtapi_print_msg(RTAPI_MSG_DBG, "wave result %i",wave_result);
+
+			
+			rtapi_print_msg(RTAPI_MSG_DBG, "wave tx at %i",wave_tx_at(pi_instance));
+
+
+			
+			//pi.wave_add_generic(wave)
+		
+		new_wave=0;
+	}
+	//wid=pi.wave_create()
+	//pi.wave_send_once(wid)
+	return 0;
+
+}
+
+/*
+FUNCTION(one_wave) {
+	float step_interval;
+	float step_count;
+	
+	float velocity;
+
+	/* step interval in nanoseconds 
+	step_interval=1e9/1234;
+	step_interval=(_velcmd(i))
+	/* step count 
+	step_count=periodns/step_interval;
+
+	return step_count;
+}
+
+
+
+*/

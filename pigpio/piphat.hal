@@ -1,0 +1,79 @@
+newinst pp_gpio ph pincount=6
+loadrt threads name1=fast fp1=0 period1=50000 name2=slow period2=10000000 
+
+setp ph.00.bcm 25
+setp ph.00.pinmode 1
+setp ph.00.invert 1
+#net led ph.00.output
+
+setp ph.01.bcm 22
+setp ph.01.pinmode 1
+setp ph.01.invert 1
+net axesenable ph.01.output
+
+setp ph.02.bcm 6
+setp ph.02.pinmode 1
+setp ph.02.dowrite 1
+
+setp ph.03.bcm 12
+setp ph.03.pinmode 1
+setp ph.03.dowrite 0
+
+setp ph.04.bcm 23
+setp ph.04.pinmode 1
+setp ph.04.dowrite 0
+
+setp ph.05.bcm 24
+setp ph.05.pinmode 1
+setp ph.05.dowrite 0
+
+addf ph.funct slow
+
+loadrt pp_stepgen
+net xdir ph.02.bcm pp_stepgen.0.0.bcmdir 
+
+addf pp_stepgen.0.funct slow
+
+
+loadrt siggen
+addf siggen.0.update slow
+setp siggen.0.frequency 16
+
+
+net led siggen.0.clock ph.00.output
+
+start
+
+setp pp_stepgen.0.0.velcmd 4000
+setp pp_stepgen.0.0.bcmstep 12
+setp pp_stepgen.0.1.bcmstep 24
+setp pp_stepgen.0.1.velcmd 4000
+setp pp_stepgen.0.new-wave 1
+sets axesenable 1
+
+net led2 siggen.0.clock  pp_stepgen.0.new-wave
+
+
+addf ph.funct slow
+addf pp_stepg
+
+loadr
+
+
+net steps siggen.0.clock ph.03.output ph.05.output
+setp siggen.0.frequency 2000
+start
+
+
+loadrt invert
+net sbuf siggen
+
+set
+
+
+
+axesenable 25
+xdir 6
+xstep 12
+ydir 23
+ystep 24
