@@ -1,0 +1,27 @@
+component pp_instance "Raspberry PI digital output for Machinekit via pigpio library";
+    // Input Pins
+pin out unsigned pi_instance=255;
+
+license "GPL";
+author "Brian Schousek";
+
+function _ ;
+option extra_inst_setup yes;
+
+
+;;
+#include <pigpiod_if2.h>
+
+FUNCTION(_) {
+	hal_print_msg(RTAPI_MSG_INFO, "Hello World!");
+	return 0;
+
+}
+
+EXTRA_INST_SETUP(){
+ 
+	hal_print_msg(RTAPI_MSG_INFO, "Hello World! setup");
+	pi_instance=pigpio_start("moby.local","8888");
+    
+    return 0;
+}

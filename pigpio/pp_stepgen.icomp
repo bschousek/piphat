@@ -2,22 +2,29 @@ component pp_stepgen "Raspberry PI digital output for Machinekit via pigpio libr
     // Input Pins
 
 
-//pin out bit #.step[pincount];
-//pin out bit #.dir[pincount];
 
-
-pin in unsigned #.bcmdir[pincount];
-pin in unsigned #.bcmstep[pincount];
-pin in float #.velcmd[pincount];
-pin out signed #.poscmd[pincount];
-pin out signed #.posfb[pincount];
-pin out unsigned #.step_period[pincount];
-pin out unsigned #.step_count[pincount];
+pin in bit ##.enable[pincount];
+pin in unsigned ##.dirpin[pincount];
+pin in unsigned ##.steppin[pincount];
+pin in float ##.velocity_cmd[pincount];
+pin in float ##.poscmd[pincount];
+pin out float ##.position-fb[pincount];
+pin out unsigned ##.step_period[pincount];
+pin out unsigned ##.step_count[pincount];
 pin io bit new_wave=0;
 pin io unsigned periodns=10000000;
 pin io unsigned pi_instance;
+pin io unsigned ##.dirsetup[pincount];
+pin io unsigned ##.dirhold[pincount];
+pin io unsigned ##.steplen[pincount];
+pin io unsigned ##.stepspace[pincount];
+pin io float ##.position-scale[pincount];
+pin io float ##.maxvel[pincount];
+pin io float ##.maxaccel[pincount];
+pin io bit ##.control-type[pincount];
 
-instanceparam int pincount = 2;
+
+instanceparam int pincount = 4;
 option MAXCOUNT 5;
 
 license "GPL";
@@ -31,71 +38,77 @@ function _;
 ;;
 #include <pigpiod_if2.h>
 
-//struct gpioPulse_t wavebuild[];//=gpioPulse_t(0,0,0);
 gpioPulse_t wavebuild[600];
-
+float current_position[MAXCOUNT];
+	
+	
 
 FUNCTION(_) {
 	int i;
 	int n;
 	int wave_result;
-	//l	int wave[local_pincount];
 	int wave;
 	float fper;
 	unsigned mystep_period;
 	unsigned mystep_count;
-				
-	if (new_wave) {
+	//float new_position[local_pincount];
+	int wave_diff;
+
+	
+	wave_diff=0;
+	for (i=0; i<local_pincount ; i++) {
+		if (_poscmd(i) != _position_fb(i)) wave_diff++;
+		//current_position[i]=_poscmd(i);
+	}
+	
+	if (wave_diff) {
+
 		rtapi_print_msg(RTAPI_MSG_DBG, "hw rev %x pp version %x pp if version %x", get_hardware_revision(pi_instance), get_pigpio_version(pi_instance), pigpiod_if_version());
-		//wave_add_new(pi_instance);
-		//wave_add_new(pi_instance);
+
 		wave_clear(pi_instance);
 		for (i=0 ; i<local_pincount ; i++) {
-			//velocity is steps/s
-			//Invert to get period in seconds
-			//calculate a period in microseconds
-			// then figure out how many of those periods (converted to ns) will fit in periodns (already in ns)
+			
 
-
-			if (_velcmd(i) != 0) {
-				fper=(1/_velcmd(i));
+			if (_velocity_cmd(i) != 0) {
+				//velocity is steps/s
+				//Invert to get period in seconds
+				fper=(1/_velocity_cmd(i));
+				//calculate a period in microseconds
 				mystep_period=fper*1e6;
+				// then figure out how many of those periods (converted to ns) will fit in periodns (already in ns)
 				mystep_count=periodns/(fper*1e9);
-				rtapi_print_msg(RTAPI_MSG_DBG, "wave add count %i period %i fper %f periodns %i",mystep_count, mystep_period, fper, periodns);
-				rtapi_print_msg(RTAPI_MSG_DBG, "wave add gpio %x bitmask %x mode %i",_bcmstep(i),1<<_bcmstep(i), get_mode(pi_instance, _bcmstep(i)));
 				
 				_step_period(i)=mystep_period;
 				_step_count(i)=mystep_count;
-				rtapi_print_msg(RTAPI_MSG_DBG, "wave add count %i period %i",mystep_count, mystep_period);
 				for (n=0; n<mystep_count; n++) {
 					//rtapi_print_msg(RTAPI_MSG_DBG, "wave add n %i count %i period %i",n,mystep_count, mystep_period);
-					wavebuild[2*n]=(gpioPulse_t){1<<_bcmstep(i), 0,15};
-					wavebuild[2*n+1]=(gpioPulse_t){0, 1<<_bcmstep(i), mystep_period-15};
+					wavebuild[2*n]=(gpioPulse_t){1<<_steppin(i), 0,15};
+					wavebuild[2*n+1]=(gpioPulse_t){0, 1<<_steppin(i), mystep_period-15};
 				}
 					//wave_result=wave_add_generic(pi_instance, mystep_count*2, wavebuild);
 				wave_result=wave_add_generic(pi_instance, mystep_count*2, wavebuild);
-					rtapi_print_msg(RTAPI_MSG_DBG, "add generic count %i %i %i",wave_result, n, mystep_count);
-					rtapi_print_msg(RTAPI_MSG_DBG, "wave max us %i actual us %i",wave_get_max_micros(pi_instance),wave_get_micros(pi_instance));
-					rtapi_print_msg(RTAPI_MSG_DBG, "wave max pulse %i actual pulse %i",wave_get_max_pulses(pi_instance),wave_get_pulses(pi_instance));
-					rtapi_print_msg(RTAPI_MSG_DBG, "wave max cbs %i actual cbs %i",wave_get_max_cbs(pi_instance),wave_get_cbs(pi_instance));
 			} 
 			else {
 				mystep_period=1;
 			}
 		}
-			rtapi_print_msg(RTAPI_MSG_DBG, "wave max us %i actual us %i",wave_get_max_micros(pi_instance),wave_get_micros(pi_instance));
-			rtapi_print_msg(RTAPI_MSG_DBG, "wave max pulse %i actual pulse %i",wave_get_max_pulses(pi_instance),wave_get_pulses(pi_instance));
 			wave=wave_create(pi_instance);
+			//wave_result=wave_send_once(pi_instance, wave);
 			rtapi_print_msg(RTAPI_MSG_DBG, "wave max us %i actual us %i",wave_get_max_micros(pi_instance),wave_get_micros(pi_instance));
 			rtapi_print_msg(RTAPI_MSG_DBG, "wave max pulse %i actual pulse %i",wave_get_max_pulses(pi_instance),wave_get_pulses(pi_instance));
-			rtapi_print_msg(RTAPI_MSG_DBG, "wave id %i",wave);
-			//wave_result=wave_send_once(pi_instance, wave);
+			rtapi_print_msg(RTAPI_MSG_DBG, "wave max cbs %i actual cbs %i",wave_get_max_cbs(pi_instance),wave_get_cbs(pi_instance));
+
 			wave_result=wave_send_repeat(pi_instance, wave);
 			
 			rtapi_print_msg(RTAPI_MSG_DBG, "wave result %i",wave_result);
 
-			
-			rtapi_print_msg(RTAPI_MSG_DBG, "wave tx at %i",wave_tx_at(pi_instance));
+		if (wave_result >0) {
+			for (i=0; i<local_pincount ; i++) {
+				_position_fb(i) = _poscmd(i);
+		
+			}
+	
+		}	
 
 
 			
@@ -109,22 +122,16 @@ FUNCTION(_) {
 
 }
 
+
+
 /*
-FUNCTION(one_wave) {
-	float step_interval;
-	float step_count;
-	
-	float velocity;
-
-	/* step interval in nanoseconds 
-	step_interval=1e9/1234;
-	step_interval=(_velcmd(i))
-	/* step count 
-	step_count=periodns/step_interval;
-
-	return step_count;
-}
-
-
-
+rtapi_print_msg(RTAPI_MSG_DBG, "wave add count %i period %i fper %f periodns %i",mystep_count, mystep_period, fper, periodns);
+				rtapi_print_msg(RTAPI_MSG_DBG, "wave add gpio %x bitmask %x mode %i",_bcmstep(i),1<<_bcmstep(i), get_mode(pi_instance, _bcmstep(i)));
+								rtapi_print_msg(RTAPI_MSG_DBG, "wave add count %i period %i",mystep_count, mystep_period);
+					rtapi_print_msg(RTAPI_MSG_DBG, "add generic count %i %i %i",wave_result, n, mystep_count);
+			rtapi_print_msg(RTAPI_MSG_DBG, "wave max us %i actual us %i",wave_get_max_micros(pi_instance),wave_get_micros(pi_instance));
+			rtapi_print_msg(RTAPI_MSG_DBG, "wave max pulse %i actual pulse %i",wave_get_max_pulses(pi_instance),wave_get_pulses(pi_instance));
+			rtapi_print_msg(RTAPI_MSG_DBG, "wave max us %i actual us %i",wave_get_max_micros(pi_instance),wave_get_micros(pi_instance));
+			rtapi_print_msg(RTAPI_MSG_DBG, "wave max pulse %i actual pulse %i",wave_get_max_pulses(pi_instance),wave_get_pulses(pi_instance));
+			rtapi_print_msg(RTAPI_MSG_DBG, "wave id %i",wave);
 */

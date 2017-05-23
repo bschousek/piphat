@@ -1,5 +1,6 @@
 newinst pp_gpio ph pincount=6
-loadrt threads name1=fast fp1=0 period1=50000 name2=slow period2=10000000 
+#loadrt threads name1=fast fp1=0 period1=50000 name2=slow period2=10000000 
+loadrt motmod base_period_nsec=50000 servo_period_nsec=10000000 num_joints=2 kins=trivkins tp=tp
 
 setp ph.00.bcm 25
 setp ph.00.pinmode 1
