@@ -1,2 +1,5 @@
 *.pyc
 *.log
+mk2/
+mk3/
+mk-proto-test/
