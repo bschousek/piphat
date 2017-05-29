@@ -1,0 +1,31 @@
+component pp_dout "Raspberry PI digital output for Machinekit via pigpio library";
+    // Input Pins
+
+
+pin in bit value;
+pin in unsigned pinmode=1;
+pin in unsigned bcm;
+pin in unsigned pi_instance;
+
+
+
+
+license "GPL";
+author "Brian Schousek";
+
+function write ;
+
+
+;;
+#include <pigpiod_if2.h>
+
+FUNCTION(write) {
+	set_mode(pi_instance, bcm, pinmode);
+
+	gpio_write(pi_instance, bcm, value);
+
+	return 0;
+
+}
+
+

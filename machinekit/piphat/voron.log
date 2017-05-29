@@ -1,0 +1,36 @@
+2017-05-27 01:53:35,064 run <module> 18 check installation
+2017-05-27 01:53:35,120 run <module> 20 cleanup session
+2017-05-27 01:53:38,322 run <module> 22 make launcher
+2017-05-27 01:53:38,331 run <module> 24 config server
+2017-05-27 01:53:39,335 run <module> 26 start piphat
+2017-05-27 01:53:39,649 voron <module> 17 starting rtapi
+2017-05-27 01:53:39,652 voron <module> 19 rtapi should be started
+2017-05-27 01:53:39,655 voron <module> 25 starting motion
+2017-05-27 01:53:39,665 voron <module> 27 motion should be started
+2017-05-27 01:53:39,830 voron <module> 29 done init
+2017-05-27 01:53:39,933 voron <module> 42 fans 1 extruders 1 lights 0
+2017-05-27 01:53:40,094 voron <module> 88 errorsignals are []
+2017-05-27 01:53:40,094 voron <module> 91 setting up estop
+2017-05-27 01:53:40,101 voron <module> 93 setting up tool loopback
+2017-05-27 01:53:40,109 voron <module> 108 starting server
+2017-05-27 01:53:40,215 voron <module> 110 server should  be started
+2017-05-27 01:53:40,338 run <module> 28 check_processes
+2017-05-27 01:53:40,338 run <module> 30 now loop
+2017-05-27 04:37:48,007 run <module> 18 check installation
+2017-05-27 04:37:48,056 run <module> 20 cleanup session
+2017-05-27 04:37:50,680 run <module> 22 make launcher
+2017-05-27 04:37:50,691 run <module> 24 config server
+2017-05-27 04:37:51,694 run <module> 26 start piphat
+2017-05-27 04:37:52,065 voron <module> 17 starting rtapi
+2017-05-27 04:37:52,072 voron <module> 19 rtapi should be started
+2017-05-27 04:37:52,079 voron <module> 25 starting motion
+2017-05-27 04:37:52,093 voron <module> 27 motion should be started
+2017-05-27 04:37:52,276 voron <module> 29 done init
+2017-05-27 04:37:52,378 voron <module> 42 fans 1 extruders 1 lights 0
+2017-05-27 04:37:52,606 voron <module> 88 errorsignals are []
+2017-05-27 04:37:52,606 voron <module> 91 setting up estop
+2017-05-27 04:37:52,616 voron <module> 93 setting up tool loopback
+2017-05-27 04:37:52,625 voron <module> 108 starting server
+2017-05-27 04:37:52,698 run <module> 28 check_processes
+2017-05-27 04:37:52,698 run <module> 30 now loop
+2017-05-27 04:37:52,733 voron <module> 110 server should  be started

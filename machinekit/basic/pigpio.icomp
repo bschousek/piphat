@@ -1,0 +1,10 @@
+component pigpio;
+pin out float floater1;
+pin out float floater2;
+pin in float theta;
+function _;
+license "GPL"; // indicates GPL v2 or later
+;;
+#include <rtapi_math.h>
+#include <pigpiod_if2.h>
+FUNCTION(_) { floater1 = 2*theta; floater2 = theta/2; return 0; }

@@ -22,7 +22,7 @@ def hardware_write():
 
 
 def init_hardware():
-    #watchList = []
+    watchList = []
     #rt=rtapi.RTAPIcommand()
     
     rt.newinst('pp_gpio','hpg','pincount=6')
@@ -55,7 +55,7 @@ def init_hardware():
         watchList.append(['temp', 0.1])
 
         base.usrcomp_status('temp', 'temp-hw', thread='servo-thread')
-        base.usrcomp_watchdog(watchList, 'estop-reset', thread='servo-thread',
+    base.usrcomp_watchdog(watchList, 'estop-reset', thread='servo-thread',
                           errorSignal='watchdog-error')
 
 

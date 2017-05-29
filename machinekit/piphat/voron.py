@@ -39,11 +39,12 @@ hal.addf('motion-controller', 'servo-thread')
 numFans = c.find('FDM', 'NUM_FANS')
 numExtruders = c.find('FDM', 'NUM_EXTRUDERS')
 numLights = c.find('FDM', 'NUM_LIGHTS')
+logging.debug("fans %i extruders %i lights %i" %(numFans, numExtruders, numLights))
 #raw_input()
 # Axis-of-motion Specific Configs (not the GUI)
 ve.velocity_extrusion(extruders=numExtruders, thread='servo-thread')
 # X [0] Axis
-base.setup_stepper(section='AXIS_0', stepgenType= 'hps',axisIndex=0, stepgenIndex=0, thread='servo-thread')
+base.setup_stepper(section='AXIS_0', stepgenType= 'hps',axisIndex=0, velocitySignal=None, stepgenIndex=0, thread='servo-thread')
 # Y [1] Axis
 base.setup_stepper(section='AXIS_1', stepgenType= 'hps',axisIndex=1, stepgenIndex=1, thread='servo-thread')
 # Z [2] Axis
@@ -82,10 +83,14 @@ for i in range(0, numLights):
     base.setup_light('l%i' % i, thread='servo-thread')
 
 # Standard I/O - EStop, Enables, Limit Switches, Etc
-errorSignals = ['temp-hw-error', 'watchdog-error', 'hbp-error']
-for i in range(0, numExtruders):
-    errorSignals.append('e%i-error' % i)
+#errorSignals = ['temp-hw-error', 'watchdog-error', 'hbp-error']
+errorSignals = []
+logging.debug("errorsignals are %r" %errorSignals)
+#for i in range(0, numExtruders):
+#    errorSignals.append('e%i-error' % i)
+logging.debug("setting up estop")
 base.setup_estop(errorSignals, thread='servo-thread')
+logging.debug("setting up tool loopback")
 base.setup_tool_loopback()
 # Probe
 base.setup_probe(thread='servo-thread')

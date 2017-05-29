@@ -22,7 +22,7 @@ try:
     logging.debug("make launcher")
     launcher.ensure_mklauncher()  # ensure mklauncher is started
     logging.debug("config server")
-    launcher.start_process("configserver -d -n QQVsim ~/Machineface/")
+    launcher.start_process("configserver -d -n Voron ~/Machineface/ ~/Cetus/")
     logging.debug("start piphat")
     launcher.start_process('linuxcnc piphat.ini')
     logging.debug("check_processes")

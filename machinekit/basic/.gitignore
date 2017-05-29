@@ -1,0 +1,17 @@
+autosave.halscope
+axis_manualtoolchange.hal
+check_constraints.hal
+core_sim.hal
+halremote.py
+mon.py
+mot2pi.hal
+mot2pi.log
+passthrough.log
+pigpio.so
+position.txt
+sim_spindle_encoder.hal
+simulated_home.hal
+sim.var
+sim.var.bak
+sincos.comp
+sincos.so

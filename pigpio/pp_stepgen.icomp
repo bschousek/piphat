@@ -60,7 +60,7 @@ FUNCTION(_) {
 		if (_poscmd(i) != _position_fb(i)) wave_diff++;
 		//current_position[i]=_poscmd(i);
 	}
-	
+	wave_diff=1;
 	if (wave_diff) {
 
 		rtapi_print_msg(RTAPI_MSG_DBG, "hw rev %x pp version %x pp if version %x", get_hardware_revision(pi_instance), get_pigpio_version(pi_instance), pigpiod_if_version());
@@ -80,6 +80,7 @@ FUNCTION(_) {
 				
 				_step_period(i)=mystep_period;
 				_step_count(i)=mystep_count;
+				_position_fb(i) = _poscmd(i);
 				for (n=0; n<mystep_count; n++) {
 					//rtapi_print_msg(RTAPI_MSG_DBG, "wave add n %i count %i period %i",n,mystep_count, mystep_period);
 					wavebuild[2*n]=(gpioPulse_t){1<<_steppin(i), 0,15};
@@ -98,11 +99,13 @@ FUNCTION(_) {
 			rtapi_print_msg(RTAPI_MSG_DBG, "wave max pulse %i actual pulse %i",wave_get_max_pulses(pi_instance),wave_get_pulses(pi_instance));
 			rtapi_print_msg(RTAPI_MSG_DBG, "wave max cbs %i actual cbs %i",wave_get_max_cbs(pi_instance),wave_get_cbs(pi_instance));
 
-			wave_result=wave_send_repeat(pi_instance, wave);
+			//wave_result=wave_send_repeat(pi_instance, wave);
+			wave_result=wave_send_once(pi_instance, wave);
 			
 			rtapi_print_msg(RTAPI_MSG_DBG, "wave result %i",wave_result);
 
-		if (wave_result >0) {
+		//if (wave_result >0) {
+		if (1) {
 			for (i=0; i<local_pincount ; i++) {
 				_position_fb(i) = _poscmd(i);
 		
