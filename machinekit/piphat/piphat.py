@@ -27,6 +27,8 @@ def init_hardware():
     
     rt.newinst('pp_gpio','hpg','pincount=6')
     rt.newinst('pp_stepgen','hps','pincount=5')
+    #rt.newinst('mult2v2', 'smult', 'pincount=5')
+    #rt.newinst('div2v2', 'sdiv', 'pincount=5')
 
     #print(c.find('HBP', 'THERMISTOR', defaultThermistor))
     #raw_input()

@@ -1,7 +1,7 @@
 # . ~/proj/machinekit.upstream/scripts/rip-environment
 #. ~/proj/machinekit/scripts/rip-environment
 
-linuxcnc_stop
+#linuxcnc_stop
 sudo cp /dev/null /var/log/linuxcnc.log
 
 # export FLAVOR=rt-preempt

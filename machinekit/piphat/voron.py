@@ -12,7 +12,14 @@ from fdm.config import velocity_extrusion as ve
 from fdm.config import base
 from fdm.config import storage
 from fdm.config import motion
+def check_axis(n=0):
+    str=filter(lambda x:'axis.0.joint' in x,hal.pins())
+    logging.debug("acheck %i %r" %(n, str))
+check_axis(1)
+
 import piphat as hardware
+check_axis(2)
+
 # initialize the RTAPI command client
 logging.debug("starting rtapi")
 rt.init_RTAPI()
@@ -21,11 +28,15 @@ logging.debug("rtapi should be started")
 # loads the ini file passed by linuxcnc
 #logging.debug('os environment  is %r' %os.environ)
 c.load_ini(os.environ['INI_FILE_NAME'])
+check_axis(3)
 
 logging.debug("starting motion")
+#motion.setup_motion(kinematics="corexykins")
 motion.setup_motion()
+check_axis(4)
 logging.debug("motion should be started")
 hardware.init_hardware()
+check_axis(5)
 logging.debug("done init")
 storage.init_storage('storage.ini')
 
@@ -35,6 +46,7 @@ if hw:
     hardware.hardware_read()
 hal.addf('motion-command-handler', 'servo-thread')
 hal.addf('motion-controller', 'servo-thread')
+hal.addf('hps.funct', 'servo-thread')
 
 numFans = c.find('FDM', 'NUM_FANS')
 numExtruders = c.find('FDM', 'NUM_EXTRUDERS')
@@ -44,7 +56,9 @@ logging.debug("fans %i extruders %i lights %i" %(numFans, numExtruders, numLight
 # Axis-of-motion Specific Configs (not the GUI)
 ve.velocity_extrusion(extruders=numExtruders, thread='servo-thread')
 # X [0] Axis
-base.setup_stepper(section='AXIS_0', stepgenType= 'hps',axisIndex=0, velocitySignal=None, stepgenIndex=0, thread='servo-thread')
+#base.setup_stepper(section='AXIS_0', stepgenType= 'hps',axisIndex=0, velocitySignal=hal.pins['axis.0.joint-vel-cmd'], stepgenIndex=0, thread='servo-thread')
+base.setup_stepper(section='AXIS_0', stepgenType= 'hps',axisIndex=0, stepgenIndex=0, thread='servo-thread')
+
 # Y [1] Axis
 base.setup_stepper(section='AXIS_1', stepgenType= 'hps',axisIndex=1, stepgenIndex=1, thread='servo-thread')
 # Z [2] Axis
