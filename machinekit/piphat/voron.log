@@ -1114,3 +1114,1038 @@
 2017-06-05 04:36:11,123 voron <module> 124 server should  be started
 2017-06-05 04:36:11,538 run <module> 28 check_processes
 2017-06-05 04:36:11,539 run <module> 30 now loop
+2017-06-06 01:19:50,627 run <module> 18 check installation
+2017-06-06 01:19:50,671 run <module> 20 cleanup session
+2017-06-06 01:19:53,820 run <module> 22 make launcher
+2017-06-06 01:19:53,825 run <module> 24 config server
+2017-06-06 01:19:54,827 run <module> 26 start piphat
+2017-06-06 01:19:55,007 voron check_axis 17 acheck 1 []
+2017-06-06 01:19:55,008 voron check_axis 17 acheck 2 []
+2017-06-06 01:19:55,008 voron <module> 24 starting rtapi
+2017-06-06 01:19:55,009 voron <module> 26 rtapi should be started
+2017-06-06 01:19:55,011 voron check_axis 17 acheck 3 []
+2017-06-06 01:19:55,011 voron <module> 33 starting motion
+2017-06-06 01:19:55,018 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-06 01:19:55,018 voron <module> 37 motion should be started
+2017-06-06 01:19:55,047 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-06 01:19:55,047 voron <module> 40 done init
+2017-06-06 01:19:55,151 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-06 01:19:55,271 voron <module> 102 errorsignals are []
+2017-06-06 01:19:55,271 voron <module> 105 setting up estop
+2017-06-06 01:19:55,274 voron <module> 107 setting up tool loopback
+2017-06-06 01:19:55,278 voron <module> 122 starting server
+2017-06-06 01:19:55,380 voron <module> 124 server should  be started
+2017-06-06 01:19:55,828 run <module> 28 check_processes
+2017-06-06 01:19:55,829 run <module> 30 now loop
+2017-06-06 03:31:56,935 run <module> 18 check installation
+2017-06-06 03:31:56,942 run <module> 20 cleanup session
+2017-06-06 03:31:56,947 run <module> 22 make launcher
+2017-06-06 03:31:56,951 run <module> 24 config server
+2017-06-06 03:31:57,954 run <module> 26 start piphat
+2017-06-06 03:31:58,107 voron check_axis 17 acheck 1 []
+2017-06-06 03:31:58,108 voron check_axis 17 acheck 2 []
+2017-06-06 03:31:58,108 voron <module> 24 starting rtapi
+2017-06-06 03:31:58,109 voron <module> 26 rtapi should be started
+2017-06-06 03:31:58,111 voron check_axis 17 acheck 3 []
+2017-06-06 03:31:58,111 voron <module> 33 starting motion
+2017-06-06 03:31:58,126 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-06 03:31:58,127 voron <module> 37 motion should be started
+2017-06-06 03:31:58,161 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-06 03:31:58,161 voron <module> 40 done init
+2017-06-06 03:31:58,264 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-06 03:31:58,401 voron <module> 102 errorsignals are []
+2017-06-06 03:31:58,401 voron <module> 105 setting up estop
+2017-06-06 03:31:58,407 voron <module> 107 setting up tool loopback
+2017-06-06 03:31:58,411 voron <module> 122 starting server
+2017-06-06 03:31:58,514 voron <module> 124 server should  be started
+2017-06-06 03:31:58,958 run <module> 28 check_processes
+2017-06-06 03:31:58,959 run <module> 30 now loop
+2017-06-09 02:43:50,799 run <module> 18 check installation
+2017-06-09 02:43:50,847 run <module> 20 cleanup session
+2017-06-09 02:43:50,852 run <module> 22 make launcher
+2017-06-09 02:43:50,929 run <module> 24 config server
+2017-06-09 02:43:51,949 run <module> 26 start piphat
+2017-06-09 02:43:52,838 voron check_axis 17 acheck 1 []
+2017-06-09 02:43:52,848 voron check_axis 17 acheck 2 []
+2017-06-09 02:43:52,849 voron <module> 24 starting rtapi
+2017-06-09 02:43:52,851 voron <module> 26 rtapi should be started
+2017-06-09 02:43:52,855 voron check_axis 17 acheck 3 []
+2017-06-09 02:43:52,855 voron <module> 33 starting motion
+2017-06-09 02:43:52,954 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 02:43:52,954 voron <module> 37 motion should be started
+2017-06-09 02:43:52,955 run <module> 28 check_processes
+2017-06-09 02:43:52,955 run <module> 30 now loop
+2017-06-09 02:46:50,716 run <module> 18 check installation
+2017-06-09 02:46:50,722 run <module> 20 cleanup session
+2017-06-09 02:46:50,727 run <module> 22 make launcher
+2017-06-09 02:46:50,732 run <module> 24 config server
+2017-06-09 02:46:51,734 run <module> 26 start piphat
+2017-06-09 02:46:51,885 voron check_axis 17 acheck 1 []
+2017-06-09 02:46:51,886 voron check_axis 17 acheck 2 []
+2017-06-09 02:46:51,886 voron <module> 24 starting rtapi
+2017-06-09 02:46:51,887 voron <module> 26 rtapi should be started
+2017-06-09 02:46:51,890 voron check_axis 17 acheck 3 []
+2017-06-09 02:46:51,890 voron <module> 33 starting motion
+2017-06-09 02:46:51,898 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 02:46:51,898 voron <module> 37 motion should be started
+2017-06-09 02:46:52,091 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 02:46:52,091 voron <module> 40 done init
+2017-06-09 02:46:52,211 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-09 02:46:52,444 voron <module> 102 errorsignals are []
+2017-06-09 02:46:52,444 voron <module> 105 setting up estop
+2017-06-09 02:46:52,452 voron <module> 107 setting up tool loopback
+2017-06-09 02:46:52,478 voron <module> 122 starting server
+2017-06-09 02:46:52,585 voron <module> 124 server should  be started
+2017-06-09 02:46:52,738 run <module> 28 check_processes
+2017-06-09 02:46:52,738 run <module> 30 now loop
+2017-06-09 03:02:32,617 run <module> 18 check installation
+2017-06-09 03:02:32,625 run <module> 20 cleanup session
+2017-06-09 03:02:32,630 run <module> 22 make launcher
+2017-06-09 03:02:32,634 run <module> 24 config server
+2017-06-09 03:02:33,637 run <module> 26 start piphat
+2017-06-09 03:02:33,930 voron check_axis 17 acheck 1 []
+2017-06-09 03:02:33,931 voron check_axis 17 acheck 2 []
+2017-06-09 03:02:33,932 voron <module> 24 starting rtapi
+2017-06-09 03:02:33,935 voron <module> 26 rtapi should be started
+2017-06-09 03:02:33,939 voron check_axis 17 acheck 3 []
+2017-06-09 03:02:33,939 voron <module> 33 starting motion
+2017-06-09 03:02:33,949 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 03:02:33,949 voron <module> 37 motion should be started
+2017-06-09 03:02:34,127 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 03:02:34,127 voron <module> 40 done init
+2017-06-09 03:02:34,231 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-09 03:02:34,302 base setup_stepper 62 stepper 0 setup
+2017-06-09 03:02:34,303 base setup_stepper 97 stepper 0 type hps axis 0 hasmotion True
+2017-06-09 03:02:34,642 run <module> 28 check_processes
+2017-06-09 03:02:34,643 run <module> 30 now loop
+2017-06-09 03:05:00,286 run <module> 18 check installation
+2017-06-09 03:05:00,292 run <module> 20 cleanup session
+2017-06-09 03:05:00,297 run <module> 22 make launcher
+2017-06-09 03:05:00,302 run <module> 24 config server
+2017-06-09 03:05:01,305 run <module> 26 start piphat
+2017-06-09 03:05:01,452 voron check_axis 17 acheck 1 []
+2017-06-09 03:05:01,452 voron check_axis 17 acheck 2 []
+2017-06-09 03:05:01,452 voron <module> 24 starting rtapi
+2017-06-09 03:05:01,454 voron <module> 26 rtapi should be started
+2017-06-09 03:05:01,457 voron check_axis 17 acheck 3 []
+2017-06-09 03:05:01,457 voron <module> 33 starting motion
+2017-06-09 03:05:01,469 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 03:05:01,469 voron <module> 37 motion should be started
+2017-06-09 03:05:01,666 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 03:05:01,667 voron <module> 40 done init
+2017-06-09 03:05:01,771 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-09 03:05:01,927 voron <module> 102 errorsignals are []
+2017-06-09 03:05:01,927 voron <module> 105 setting up estop
+2017-06-09 03:05:01,932 voron <module> 107 setting up tool loopback
+2017-06-09 03:05:01,937 voron <module> 122 starting server
+2017-06-09 03:05:02,043 voron <module> 124 server should  be started
+2017-06-09 03:05:02,310 run <module> 28 check_processes
+2017-06-09 03:05:02,310 run <module> 30 now loop
+2017-06-09 03:05:33,761 run <module> 18 check installation
+2017-06-09 03:05:33,803 run <module> 20 cleanup session
+2017-06-09 03:05:36,910 run <module> 22 make launcher
+2017-06-09 03:05:36,916 run <module> 24 config server
+2017-06-09 03:05:37,920 run <module> 26 start piphat
+2017-06-09 03:05:38,031 voron check_axis 17 acheck 1 []
+2017-06-09 03:05:38,032 voron check_axis 17 acheck 2 []
+2017-06-09 03:05:38,032 voron <module> 24 starting rtapi
+2017-06-09 03:05:38,033 voron <module> 26 rtapi should be started
+2017-06-09 03:05:38,035 voron check_axis 17 acheck 3 []
+2017-06-09 03:05:38,035 voron <module> 33 starting motion
+2017-06-09 03:05:38,042 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 03:05:38,042 voron <module> 37 motion should be started
+2017-06-09 03:05:38,068 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 03:05:38,068 voron <module> 40 done init
+2017-06-09 03:05:38,170 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-09 03:05:38,929 run <module> 28 check_processes
+2017-06-09 03:05:38,930 run <module> 30 now loop
+2017-06-09 03:06:18,339 run <module> 18 check installation
+2017-06-09 03:06:18,345 run <module> 20 cleanup session
+2017-06-09 03:06:18,350 run <module> 22 make launcher
+2017-06-09 03:06:18,355 run <module> 24 config server
+2017-06-09 03:06:19,357 run <module> 26 start piphat
+2017-06-09 03:06:19,495 voron check_axis 17 acheck 1 []
+2017-06-09 03:06:19,495 voron check_axis 17 acheck 2 []
+2017-06-09 03:06:19,495 voron <module> 24 starting rtapi
+2017-06-09 03:06:19,497 voron <module> 26 rtapi should be started
+2017-06-09 03:06:19,499 voron check_axis 17 acheck 3 []
+2017-06-09 03:06:19,499 voron <module> 33 starting motion
+2017-06-09 03:06:19,508 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 03:06:19,508 voron <module> 37 motion should be started
+2017-06-09 03:06:19,542 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 03:06:19,542 voron <module> 40 done init
+2017-06-09 03:06:19,645 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-09 03:06:20,362 run <module> 28 check_processes
+2017-06-09 03:06:20,363 run <module> 30 now loop
+2017-06-09 03:06:53,535 run <module> 18 check installation
+2017-06-09 03:06:53,541 run <module> 20 cleanup session
+2017-06-09 03:06:53,546 run <module> 22 make launcher
+2017-06-09 03:06:53,550 run <module> 24 config server
+2017-06-09 03:06:54,553 run <module> 26 start piphat
+2017-06-09 03:06:54,709 voron check_axis 17 acheck 1 []
+2017-06-09 03:06:54,709 voron check_axis 17 acheck 2 []
+2017-06-09 03:06:54,709 voron <module> 24 starting rtapi
+2017-06-09 03:06:54,711 voron <module> 26 rtapi should be started
+2017-06-09 03:06:54,713 voron check_axis 17 acheck 3 []
+2017-06-09 03:06:54,713 voron <module> 33 starting motion
+2017-06-09 03:06:54,724 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 03:06:54,724 voron <module> 37 motion should be started
+2017-06-09 03:06:54,859 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 03:06:54,859 voron <module> 40 done init
+2017-06-09 03:06:54,963 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-09 03:06:55,149 voron <module> 102 errorsignals are []
+2017-06-09 03:06:55,149 voron <module> 105 setting up estop
+2017-06-09 03:06:55,157 voron <module> 107 setting up tool loopback
+2017-06-09 03:06:55,162 voron <module> 122 starting server
+2017-06-09 03:06:55,264 voron <module> 124 server should  be started
+2017-06-09 03:06:55,559 run <module> 28 check_processes
+2017-06-09 03:06:55,559 run <module> 30 now loop
+2017-06-09 03:07:48,959 run <module> 18 check installation
+2017-06-09 03:07:48,965 run <module> 20 cleanup session
+2017-06-09 03:07:52,012 run <module> 22 make launcher
+2017-06-09 03:07:52,024 run <module> 24 config server
+2017-06-09 03:07:53,027 run <module> 26 start piphat
+2017-06-09 03:07:53,179 voron check_axis 17 acheck 1 []
+2017-06-09 03:07:53,180 voron check_axis 17 acheck 2 []
+2017-06-09 03:07:53,180 voron <module> 24 starting rtapi
+2017-06-09 03:07:53,181 voron <module> 26 rtapi should be started
+2017-06-09 03:07:53,183 voron check_axis 17 acheck 3 []
+2017-06-09 03:07:53,184 voron <module> 33 starting motion
+2017-06-09 03:07:53,192 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 03:07:53,192 voron <module> 37 motion should be started
+2017-06-09 03:07:53,364 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 03:07:53,364 voron <module> 40 done init
+2017-06-09 03:07:53,468 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-09 03:07:54,032 run <module> 28 check_processes
+2017-06-09 03:07:54,032 run <module> 30 now loop
+2017-06-09 03:08:51,099 run <module> 18 check installation
+2017-06-09 03:08:51,105 run <module> 20 cleanup session
+2017-06-09 03:08:51,112 run <module> 22 make launcher
+2017-06-09 03:08:51,117 run <module> 24 config server
+2017-06-09 03:08:52,120 run <module> 26 start piphat
+2017-06-09 03:08:52,255 voron check_axis 17 acheck 1 []
+2017-06-09 03:08:52,255 voron check_axis 17 acheck 2 []
+2017-06-09 03:08:52,255 voron <module> 24 starting rtapi
+2017-06-09 03:08:52,257 voron <module> 26 rtapi should be started
+2017-06-09 03:08:52,259 voron check_axis 17 acheck 3 []
+2017-06-09 03:08:52,259 voron <module> 33 starting motion
+2017-06-09 03:08:52,272 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 03:08:52,272 voron <module> 37 motion should be started
+2017-06-09 03:08:52,370 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 03:08:52,370 voron <module> 40 done init
+2017-06-09 03:08:52,473 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-09 03:08:52,607 voron <module> 102 errorsignals are []
+2017-06-09 03:08:52,607 voron <module> 105 setting up estop
+2017-06-09 03:08:52,614 voron <module> 107 setting up tool loopback
+2017-06-09 03:08:52,619 voron <module> 122 starting server
+2017-06-09 03:08:52,722 voron <module> 124 server should  be started
+2017-06-09 03:08:53,123 run <module> 28 check_processes
+2017-06-09 03:08:53,124 run <module> 30 now loop
+2017-06-09 03:11:47,838 run <module> 18 check installation
+2017-06-09 03:11:47,844 run <module> 20 cleanup session
+2017-06-09 03:11:47,849 run <module> 22 make launcher
+2017-06-09 03:11:47,853 run <module> 24 config server
+2017-06-09 03:11:48,856 run <module> 26 start piphat
+2017-06-09 03:11:49,010 voron check_axis 17 acheck 1 []
+2017-06-09 03:11:49,011 voron check_axis 17 acheck 2 []
+2017-06-09 03:11:49,011 voron <module> 24 starting rtapi
+2017-06-09 03:11:49,013 voron <module> 26 rtapi should be started
+2017-06-09 03:11:49,015 voron check_axis 17 acheck 3 []
+2017-06-09 03:11:49,015 voron <module> 33 starting motion
+2017-06-09 03:11:49,023 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 03:11:49,023 voron <module> 37 motion should be started
+2017-06-09 03:11:49,861 run <module> 28 check_processes
+2017-06-09 03:11:49,862 run <module> 30 now loop
+2017-06-09 03:12:15,427 run <module> 18 check installation
+2017-06-09 03:12:15,436 run <module> 20 cleanup session
+2017-06-09 03:12:15,444 run <module> 22 make launcher
+2017-06-09 03:12:15,448 run <module> 24 config server
+2017-06-09 03:12:16,451 run <module> 26 start piphat
+2017-06-09 03:12:16,601 voron check_axis 17 acheck 1 []
+2017-06-09 03:12:16,602 voron check_axis 17 acheck 2 []
+2017-06-09 03:12:16,602 voron <module> 24 starting rtapi
+2017-06-09 03:12:16,603 voron <module> 26 rtapi should be started
+2017-06-09 03:12:16,606 voron check_axis 17 acheck 3 []
+2017-06-09 03:12:16,606 voron <module> 33 starting motion
+2017-06-09 03:12:16,617 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 03:12:16,617 voron <module> 37 motion should be started
+2017-06-09 03:12:17,456 run <module> 28 check_processes
+2017-06-09 03:12:17,457 run <module> 30 now loop
+2017-06-09 03:13:16,843 run <module> 18 check installation
+2017-06-09 03:13:16,850 run <module> 20 cleanup session
+2017-06-09 03:13:19,402 run <module> 22 make launcher
+2017-06-09 03:13:19,408 run <module> 24 config server
+2017-06-09 03:13:20,411 run <module> 26 start piphat
+2017-06-09 03:13:20,560 voron check_axis 17 acheck 1 []
+2017-06-09 03:13:20,560 voron check_axis 17 acheck 2 []
+2017-06-09 03:13:20,560 voron <module> 24 starting rtapi
+2017-06-09 03:13:20,561 voron <module> 26 rtapi should be started
+2017-06-09 03:13:20,564 voron check_axis 17 acheck 3 []
+2017-06-09 03:13:20,564 voron <module> 33 starting motion
+2017-06-09 03:13:20,572 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 03:13:20,572 voron <module> 37 motion should be started
+2017-06-09 03:13:20,606 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 03:13:20,607 voron <module> 40 done init
+2017-06-09 03:13:20,711 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-09 03:13:20,831 voron <module> 102 errorsignals are []
+2017-06-09 03:13:20,831 voron <module> 105 setting up estop
+2017-06-09 03:13:20,835 voron <module> 107 setting up tool loopback
+2017-06-09 03:13:20,839 voron <module> 122 starting server
+2017-06-09 03:13:20,942 voron <module> 124 server should  be started
+2017-06-09 03:13:21,416 run <module> 28 check_processes
+2017-06-09 03:13:21,417 run <module> 30 now loop
+2017-06-09 03:23:51,321 run <module> 18 check installation
+2017-06-09 03:23:51,360 run <module> 20 cleanup session
+2017-06-09 03:23:54,471 run <module> 22 make launcher
+2017-06-09 03:23:54,476 run <module> 24 config server
+2017-06-09 03:23:55,486 run <module> 26 start piphat
+2017-06-09 03:23:55,603 voron check_axis 17 acheck 1 []
+2017-06-09 03:23:55,603 voron check_axis 17 acheck 2 []
+2017-06-09 03:23:55,603 voron <module> 24 starting rtapi
+2017-06-09 03:23:55,604 voron <module> 26 rtapi should be started
+2017-06-09 03:23:55,606 voron check_axis 17 acheck 3 []
+2017-06-09 03:23:55,607 voron <module> 33 starting motion
+2017-06-09 03:23:55,614 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 03:23:55,614 voron <module> 37 motion should be started
+2017-06-09 03:23:55,765 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 03:23:55,765 voron <module> 40 done init
+2017-06-09 03:23:55,870 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-09 03:23:56,491 run <module> 28 check_processes
+2017-06-09 03:23:56,491 run <module> 30 now loop
+2017-06-09 03:24:13,646 run <module> 18 check installation
+2017-06-09 03:24:13,688 run <module> 20 cleanup session
+2017-06-09 03:24:16,295 run <module> 22 make launcher
+2017-06-09 03:24:16,299 run <module> 24 config server
+2017-06-09 03:24:17,308 run <module> 26 start piphat
+2017-06-09 03:24:17,420 voron check_axis 17 acheck 1 []
+2017-06-09 03:24:17,421 voron check_axis 17 acheck 2 []
+2017-06-09 03:24:17,421 voron <module> 24 starting rtapi
+2017-06-09 03:24:17,422 voron <module> 26 rtapi should be started
+2017-06-09 03:24:17,424 voron check_axis 17 acheck 3 []
+2017-06-09 03:24:17,424 voron <module> 33 starting motion
+2017-06-09 03:24:17,432 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 03:24:17,432 voron <module> 37 motion should be started
+2017-06-09 03:24:17,481 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 03:24:17,481 voron <module> 40 done init
+2017-06-09 03:24:17,584 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-09 03:24:18,310 run <module> 28 check_processes
+2017-06-09 03:24:18,311 run <module> 30 now loop
+2017-06-09 03:24:45,606 run <module> 18 check installation
+2017-06-09 03:24:45,651 run <module> 20 cleanup session
+2017-06-09 03:24:48,238 run <module> 22 make launcher
+2017-06-09 03:24:48,242 run <module> 24 config server
+2017-06-09 03:24:49,251 run <module> 26 start piphat
+2017-06-09 03:24:49,370 voron check_axis 17 acheck 1 []
+2017-06-09 03:24:49,370 voron check_axis 17 acheck 2 []
+2017-06-09 03:24:49,370 voron <module> 24 starting rtapi
+2017-06-09 03:24:49,372 voron <module> 26 rtapi should be started
+2017-06-09 03:24:49,374 voron check_axis 17 acheck 3 []
+2017-06-09 03:24:49,374 voron <module> 33 starting motion
+2017-06-09 03:24:49,381 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 03:24:49,381 voron <module> 37 motion should be started
+2017-06-09 03:24:49,405 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 03:24:49,406 voron <module> 40 done init
+2017-06-09 03:24:49,508 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-09 03:24:49,619 voron <module> 102 errorsignals are []
+2017-06-09 03:24:49,619 voron <module> 105 setting up estop
+2017-06-09 03:24:49,623 voron <module> 107 setting up tool loopback
+2017-06-09 03:24:49,626 voron <module> 122 starting server
+2017-06-09 03:24:49,731 voron <module> 124 server should  be started
+2017-06-09 03:24:50,255 run <module> 28 check_processes
+2017-06-09 03:24:50,255 run <module> 30 now loop
+2017-06-09 03:37:24,541 run <module> 18 check installation
+2017-06-09 03:37:24,548 run <module> 20 cleanup session
+2017-06-09 03:37:27,081 run <module> 22 make launcher
+2017-06-09 03:37:27,085 run <module> 24 config server
+2017-06-09 03:37:28,090 run <module> 26 start piphat
+2017-06-09 03:37:28,195 voron check_axis 17 acheck 1 []
+2017-06-09 03:37:28,195 voron check_axis 17 acheck 2 []
+2017-06-09 03:37:28,195 voron <module> 24 starting rtapi
+2017-06-09 03:37:28,196 voron <module> 26 rtapi should be started
+2017-06-09 03:37:28,199 voron check_axis 17 acheck 3 []
+2017-06-09 03:37:28,199 voron <module> 33 starting motion
+2017-06-09 03:37:28,207 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 03:37:28,207 voron <module> 37 motion should be started
+2017-06-09 03:37:28,437 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 03:37:28,438 voron <module> 40 done init
+2017-06-09 03:37:28,539 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-09 03:37:28,646 voron <module> 102 errorsignals are []
+2017-06-09 03:37:28,646 voron <module> 105 setting up estop
+2017-06-09 03:37:28,649 voron <module> 107 setting up tool loopback
+2017-06-09 03:37:28,653 voron <module> 122 starting server
+2017-06-09 03:37:28,755 voron <module> 124 server should  be started
+2017-06-09 03:37:29,092 run <module> 28 check_processes
+2017-06-09 03:37:29,092 run <module> 30 now loop
+2017-06-09 03:38:54,257 run <module> 18 check installation
+2017-06-09 03:38:54,296 run <module> 20 cleanup session
+2017-06-09 03:38:56,902 run <module> 22 make launcher
+2017-06-09 03:38:56,906 run <module> 24 config server
+2017-06-09 03:38:57,909 run <module> 26 start piphat
+2017-06-09 03:38:58,020 voron check_axis 17 acheck 1 []
+2017-06-09 03:38:58,020 voron check_axis 17 acheck 2 []
+2017-06-09 03:38:58,020 voron <module> 24 starting rtapi
+2017-06-09 03:38:58,022 voron <module> 26 rtapi should be started
+2017-06-09 03:38:58,024 voron check_axis 17 acheck 3 []
+2017-06-09 03:38:58,024 voron <module> 33 starting motion
+2017-06-09 03:38:58,032 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 03:38:58,032 voron <module> 37 motion should be started
+2017-06-09 03:38:58,059 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 03:38:58,059 voron <module> 40 done init
+2017-06-09 03:38:58,161 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-09 03:38:58,262 voron <module> 102 errorsignals are []
+2017-06-09 03:38:58,262 voron <module> 105 setting up estop
+2017-06-09 03:38:58,265 voron <module> 107 setting up tool loopback
+2017-06-09 03:38:58,268 voron <module> 122 starting server
+2017-06-09 03:38:58,370 voron <module> 124 server should  be started
+2017-06-09 03:38:58,911 run <module> 28 check_processes
+2017-06-09 03:38:58,911 run <module> 30 now loop
+2017-06-09 23:34:16,822 run <module> 18 check installation
+2017-06-09 23:34:16,856 run <module> 20 cleanup session
+2017-06-09 23:34:19,970 run <module> 22 make launcher
+2017-06-09 23:34:19,975 run <module> 24 config server
+2017-06-09 23:34:20,977 run <module> 26 start piphat
+2017-06-09 23:34:21,267 voron check_axis 17 acheck 1 []
+2017-06-09 23:34:21,267 voron check_axis 17 acheck 2 []
+2017-06-09 23:34:21,268 voron <module> 24 starting rtapi
+2017-06-09 23:34:21,271 voron <module> 26 rtapi should be started
+2017-06-09 23:34:21,273 voron check_axis 17 acheck 3 []
+2017-06-09 23:34:21,274 voron <module> 33 starting motion
+2017-06-09 23:34:21,283 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 23:34:21,283 voron <module> 37 motion should be started
+2017-06-09 23:34:21,504 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-09 23:34:21,504 voron <module> 40 done init
+2017-06-09 23:34:21,608 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-09 23:34:21,743 voron <module> 102 errorsignals are []
+2017-06-09 23:34:21,744 voron <module> 105 setting up estop
+2017-06-09 23:34:21,750 voron <module> 107 setting up tool loopback
+2017-06-09 23:34:21,756 voron <module> 122 starting server
+2017-06-09 23:34:21,863 voron <module> 124 server should  be started
+2017-06-09 23:34:21,980 run <module> 28 check_processes
+2017-06-09 23:34:21,980 run <module> 30 now loop
+2017-06-10 00:57:38,129 run <module> 18 check installation
+2017-06-10 00:57:38,158 run <module> 20 cleanup session
+2017-06-10 00:57:40,766 run <module> 22 make launcher
+2017-06-10 00:57:40,773 run <module> 24 config server
+2017-06-10 00:57:41,777 run <module> 26 start piphat
+2017-06-10 00:57:42,088 voron check_axis 17 acheck 1 []
+2017-06-10 00:57:42,093 voron check_axis 17 acheck 2 []
+2017-06-10 00:57:42,094 voron <module> 24 starting rtapi
+2017-06-10 00:57:42,097 voron <module> 26 rtapi should be started
+2017-06-10 00:57:42,100 voron check_axis 17 acheck 3 []
+2017-06-10 00:57:42,101 voron <module> 33 starting motion
+2017-06-10 00:57:42,111 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 00:57:42,112 voron <module> 37 motion should be started
+2017-06-10 00:57:42,240 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 00:57:42,240 voron <module> 40 done init
+2017-06-10 00:57:42,344 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-10 00:57:42,468 voron <module> 102 errorsignals are []
+2017-06-10 00:57:42,468 voron <module> 105 setting up estop
+2017-06-10 00:57:42,471 voron <module> 107 setting up tool loopback
+2017-06-10 00:57:42,475 voron <module> 122 starting server
+2017-06-10 00:57:42,581 voron <module> 124 server should  be started
+2017-06-10 00:57:42,780 run <module> 28 check_processes
+2017-06-10 00:57:42,780 run <module> 30 now loop
+2017-06-10 01:30:48,278 run <module> 18 check installation
+2017-06-10 01:30:48,305 run <module> 20 cleanup session
+2017-06-10 01:30:51,426 run <module> 22 make launcher
+2017-06-10 01:30:51,435 run <module> 24 config server
+2017-06-10 01:30:52,444 run <module> 26 start piphat
+2017-06-10 01:30:52,798 voron check_axis 17 acheck 1 []
+2017-06-10 01:30:52,798 voron check_axis 17 acheck 2 []
+2017-06-10 01:30:52,798 voron <module> 24 starting rtapi
+2017-06-10 01:30:52,800 voron <module> 26 rtapi should be started
+2017-06-10 01:30:52,803 voron check_axis 17 acheck 3 []
+2017-06-10 01:30:52,803 voron <module> 33 starting motion
+2017-06-10 01:30:52,813 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 01:30:52,813 voron <module> 37 motion should be started
+2017-06-10 01:30:53,027 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 01:30:53,027 voron <module> 40 done init
+2017-06-10 01:30:53,135 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-10 01:30:53,289 voron <module> 102 errorsignals are []
+2017-06-10 01:30:53,289 voron <module> 105 setting up estop
+2017-06-10 01:30:53,301 voron <module> 107 setting up tool loopback
+2017-06-10 01:30:53,307 voron <module> 122 starting server
+2017-06-10 01:30:53,414 voron <module> 124 server should  be started
+2017-06-10 01:30:53,449 run <module> 28 check_processes
+2017-06-10 01:30:53,449 run <module> 30 now loop
+2017-06-10 01:31:17,714 run <module> 18 check installation
+2017-06-10 01:31:17,726 run <module> 20 cleanup session
+2017-06-10 01:31:20,277 run <module> 22 make launcher
+2017-06-10 01:31:20,282 run <module> 24 config server
+2017-06-10 01:31:21,284 run <module> 26 start piphat
+2017-06-10 01:31:21,414 voron check_axis 17 acheck 1 []
+2017-06-10 01:31:21,414 voron check_axis 17 acheck 2 []
+2017-06-10 01:31:21,414 voron <module> 24 starting rtapi
+2017-06-10 01:31:21,416 voron <module> 26 rtapi should be started
+2017-06-10 01:31:21,419 voron check_axis 17 acheck 3 []
+2017-06-10 01:31:21,419 voron <module> 33 starting motion
+2017-06-10 01:31:21,431 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 01:31:21,431 voron <module> 37 motion should be started
+2017-06-10 01:31:21,462 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 01:31:21,463 voron <module> 40 done init
+2017-06-10 01:31:21,567 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-10 01:31:21,704 voron <module> 102 errorsignals are []
+2017-06-10 01:31:21,704 voron <module> 105 setting up estop
+2017-06-10 01:31:21,713 voron <module> 107 setting up tool loopback
+2017-06-10 01:31:21,718 voron <module> 122 starting server
+2017-06-10 01:31:21,822 voron <module> 124 server should  be started
+2017-06-10 01:31:22,286 run <module> 28 check_processes
+2017-06-10 01:31:22,286 run <module> 30 now loop
+2017-06-10 01:32:20,415 run <module> 18 check installation
+2017-06-10 01:32:20,424 run <module> 20 cleanup session
+2017-06-10 01:32:20,431 run <module> 22 make launcher
+2017-06-10 01:32:20,436 run <module> 24 config server
+2017-06-10 01:32:21,439 run <module> 26 start piphat
+2017-06-10 01:32:21,596 voron check_axis 17 acheck 1 []
+2017-06-10 01:32:21,597 voron check_axis 17 acheck 2 []
+2017-06-10 01:32:21,597 voron <module> 24 starting rtapi
+2017-06-10 01:32:21,598 voron <module> 26 rtapi should be started
+2017-06-10 01:32:21,601 voron check_axis 17 acheck 3 []
+2017-06-10 01:32:21,601 voron <module> 33 starting motion
+2017-06-10 01:32:21,609 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 01:32:21,609 voron <module> 37 motion should be started
+2017-06-10 01:32:21,641 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 01:32:21,641 voron <module> 40 done init
+2017-06-10 01:32:21,743 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-10 01:32:21,884 voron <module> 102 errorsignals are []
+2017-06-10 01:32:21,884 voron <module> 105 setting up estop
+2017-06-10 01:32:21,888 voron <module> 107 setting up tool loopback
+2017-06-10 01:32:21,892 voron <module> 122 starting server
+2017-06-10 01:32:22,000 voron <module> 124 server should  be started
+2017-06-10 01:32:22,441 run <module> 28 check_processes
+2017-06-10 01:32:22,442 run <module> 30 now loop
+2017-06-10 01:48:55,692 run <module> 18 check installation
+2017-06-10 01:48:55,699 run <module> 20 cleanup session
+2017-06-10 01:48:55,704 run <module> 22 make launcher
+2017-06-10 01:48:55,708 run <module> 24 config server
+2017-06-10 01:48:56,711 run <module> 26 start piphat
+2017-06-10 01:48:56,872 voron check_axis 17 acheck 1 []
+2017-06-10 01:48:56,872 voron check_axis 17 acheck 2 []
+2017-06-10 01:48:56,872 voron <module> 24 starting rtapi
+2017-06-10 01:48:56,874 voron <module> 26 rtapi should be started
+2017-06-10 01:48:56,876 voron check_axis 17 acheck 3 []
+2017-06-10 01:48:56,876 voron <module> 33 starting motion
+2017-06-10 01:48:56,887 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 01:48:56,887 voron <module> 37 motion should be started
+2017-06-10 01:48:57,027 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 01:48:57,027 voron <module> 40 done init
+2017-06-10 01:48:57,133 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-10 01:48:57,250 voron <module> 102 errorsignals are []
+2017-06-10 01:48:57,250 voron <module> 105 setting up estop
+2017-06-10 01:48:57,256 voron <module> 107 setting up tool loopback
+2017-06-10 01:48:57,259 voron <module> 122 starting server
+2017-06-10 01:48:57,362 voron <module> 124 server should  be started
+2017-06-10 01:48:57,715 run <module> 28 check_processes
+2017-06-10 01:48:57,716 run <module> 30 now loop
+2017-06-10 01:51:27,829 run <module> 18 check installation
+2017-06-10 01:51:27,838 run <module> 20 cleanup session
+2017-06-10 01:51:27,843 run <module> 22 make launcher
+2017-06-10 01:51:27,847 run <module> 24 config server
+2017-06-10 01:51:28,850 run <module> 26 start piphat
+2017-06-10 01:51:29,006 voron check_axis 17 acheck 1 []
+2017-06-10 01:51:29,007 voron check_axis 17 acheck 2 []
+2017-06-10 01:51:29,007 voron <module> 24 starting rtapi
+2017-06-10 01:51:29,008 voron <module> 26 rtapi should be started
+2017-06-10 01:51:29,011 voron check_axis 17 acheck 3 []
+2017-06-10 01:51:29,011 voron <module> 33 starting motion
+2017-06-10 01:51:29,019 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 01:51:29,019 voron <module> 37 motion should be started
+2017-06-10 01:51:29,163 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 01:51:29,163 voron <module> 40 done init
+2017-06-10 01:51:29,267 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-10 01:51:29,404 voron <module> 102 errorsignals are []
+2017-06-10 01:51:29,404 voron <module> 105 setting up estop
+2017-06-10 01:51:29,409 voron <module> 107 setting up tool loopback
+2017-06-10 01:51:29,413 voron <module> 122 starting server
+2017-06-10 01:51:29,516 voron <module> 124 server should  be started
+2017-06-10 01:51:29,853 run <module> 28 check_processes
+2017-06-10 01:51:29,854 run <module> 30 now loop
+2017-06-10 02:05:14,887 run <module> 18 check installation
+2017-06-10 02:05:14,895 run <module> 20 cleanup session
+2017-06-10 02:05:17,432 run <module> 22 make launcher
+2017-06-10 02:05:17,438 run <module> 24 config server
+2017-06-10 02:05:18,440 run <module> 26 start piphat
+2017-06-10 02:05:18,586 voron check_axis 17 acheck 1 []
+2017-06-10 02:05:18,587 voron check_axis 17 acheck 2 []
+2017-06-10 02:05:18,587 voron <module> 24 starting rtapi
+2017-06-10 02:05:18,588 voron <module> 26 rtapi should be started
+2017-06-10 02:05:18,591 voron check_axis 17 acheck 3 []
+2017-06-10 02:05:18,591 voron <module> 33 starting motion
+2017-06-10 02:05:18,599 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 02:05:18,600 voron <module> 37 motion should be started
+2017-06-10 02:05:18,737 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 02:05:18,737 voron <module> 40 done init
+2017-06-10 02:05:18,843 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-10 02:05:18,972 voron <module> 102 errorsignals are []
+2017-06-10 02:05:18,972 voron <module> 105 setting up estop
+2017-06-10 02:05:18,977 voron <module> 107 setting up tool loopback
+2017-06-10 02:05:18,982 voron <module> 122 starting server
+2017-06-10 02:05:19,086 voron <module> 124 server should  be started
+2017-06-10 02:05:19,442 run <module> 28 check_processes
+2017-06-10 02:05:19,442 run <module> 30 now loop
+2017-06-10 02:49:47,325 run <module> 18 check installation
+2017-06-10 02:49:47,366 run <module> 20 cleanup session
+2017-06-10 02:49:50,475 run <module> 22 make launcher
+2017-06-10 02:49:50,479 run <module> 24 config server
+2017-06-10 02:49:51,482 run <module> 26 start piphat
+2017-06-10 02:49:51,602 voron check_axis 17 acheck 1 []
+2017-06-10 02:49:51,602 voron check_axis 17 acheck 2 []
+2017-06-10 02:49:51,602 voron <module> 24 starting rtapi
+2017-06-10 02:49:51,603 voron <module> 26 rtapi should be started
+2017-06-10 02:49:51,606 voron check_axis 17 acheck 3 []
+2017-06-10 02:49:51,606 voron <module> 33 starting motion
+2017-06-10 02:49:51,613 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 02:49:51,613 voron <module> 37 motion should be started
+2017-06-10 02:49:51,746 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 02:49:51,746 voron <module> 40 done init
+2017-06-10 02:49:51,849 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-10 02:49:51,951 voron <module> 102 errorsignals are []
+2017-06-10 02:49:51,952 voron <module> 105 setting up estop
+2017-06-10 02:49:51,955 voron <module> 107 setting up tool loopback
+2017-06-10 02:49:51,958 voron <module> 122 starting server
+2017-06-10 02:49:52,065 voron <module> 124 server should  be started
+2017-06-10 02:49:52,483 run <module> 28 check_processes
+2017-06-10 02:49:52,484 run <module> 30 now loop
+2017-06-10 02:57:22,437 run <module> 18 check installation
+2017-06-10 02:57:22,471 run <module> 20 cleanup session
+2017-06-10 02:57:25,087 run <module> 22 make launcher
+2017-06-10 02:57:25,091 run <module> 24 config server
+2017-06-10 02:57:26,112 run <module> 26 start piphat
+2017-06-10 02:57:26,225 voron check_axis 17 acheck 1 []
+2017-06-10 02:57:26,225 voron check_axis 17 acheck 2 []
+2017-06-10 02:57:26,226 voron <module> 24 starting rtapi
+2017-06-10 02:57:26,227 voron <module> 26 rtapi should be started
+2017-06-10 02:57:26,229 voron check_axis 17 acheck 3 []
+2017-06-10 02:57:26,229 voron <module> 33 starting motion
+2017-06-10 02:57:26,236 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 02:57:26,237 voron <module> 37 motion should be started
+2017-06-10 02:57:26,366 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 02:57:26,366 voron <module> 40 done init
+2017-06-10 02:57:26,471 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-10 02:57:26,576 voron <module> 102 errorsignals are []
+2017-06-10 02:57:26,576 voron <module> 105 setting up estop
+2017-06-10 02:57:26,579 voron <module> 107 setting up tool loopback
+2017-06-10 02:57:26,582 voron <module> 122 starting server
+2017-06-10 02:57:26,686 voron <module> 124 server should  be started
+2017-06-10 02:57:27,114 run <module> 28 check_processes
+2017-06-10 02:57:27,114 run <module> 30 now loop
+2017-06-10 03:03:10,874 run <module> 18 check installation
+2017-06-10 03:03:10,881 run <module> 20 cleanup session
+2017-06-10 03:03:13,925 run <module> 22 make launcher
+2017-06-10 03:03:13,932 run <module> 24 config server
+2017-06-10 03:03:14,935 run <module> 26 start piphat
+2017-06-10 03:03:15,088 voron check_axis 17 acheck 1 []
+2017-06-10 03:03:15,089 voron check_axis 17 acheck 2 []
+2017-06-10 03:03:15,089 voron <module> 24 starting rtapi
+2017-06-10 03:03:15,090 voron <module> 26 rtapi should be started
+2017-06-10 03:03:15,093 voron check_axis 17 acheck 3 []
+2017-06-10 03:03:15,093 voron <module> 33 starting motion
+2017-06-10 03:03:15,102 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 03:03:15,102 voron <module> 37 motion should be started
+2017-06-10 03:03:15,244 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 03:03:15,244 voron <module> 40 done init
+2017-06-10 03:03:15,348 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-10 03:03:15,941 run <module> 28 check_processes
+2017-06-10 03:03:15,941 run <module> 30 now loop
+2017-06-10 03:03:39,496 run <module> 18 check installation
+2017-06-10 03:03:39,505 run <module> 20 cleanup session
+2017-06-10 03:03:42,047 run <module> 22 make launcher
+2017-06-10 03:03:42,052 run <module> 24 config server
+2017-06-10 03:03:43,055 run <module> 26 start piphat
+2017-06-10 03:03:43,204 voron check_axis 17 acheck 1 []
+2017-06-10 03:03:43,204 voron check_axis 17 acheck 2 []
+2017-06-10 03:03:43,204 voron <module> 24 starting rtapi
+2017-06-10 03:03:43,206 voron <module> 26 rtapi should be started
+2017-06-10 03:03:43,208 voron check_axis 17 acheck 3 []
+2017-06-10 03:03:43,208 voron <module> 33 starting motion
+2017-06-10 03:03:43,217 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 03:03:43,217 voron <module> 37 motion should be started
+2017-06-10 03:03:43,258 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 03:03:43,258 voron <module> 40 done init
+2017-06-10 03:03:43,361 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-10 03:03:43,461 voron <module> 102 errorsignals are []
+2017-06-10 03:03:43,461 voron <module> 105 setting up estop
+2017-06-10 03:03:43,465 voron <module> 107 setting up tool loopback
+2017-06-10 03:03:43,468 voron <module> 122 starting server
+2017-06-10 03:03:43,573 voron <module> 124 server should  be started
+2017-06-10 03:03:44,061 run <module> 28 check_processes
+2017-06-10 03:03:44,061 run <module> 30 now loop
+2017-06-10 03:04:21,709 run <module> 18 check installation
+2017-06-10 03:04:21,716 run <module> 20 cleanup session
+2017-06-10 03:04:21,721 run <module> 22 make launcher
+2017-06-10 03:04:21,726 run <module> 24 config server
+2017-06-10 03:04:22,729 run <module> 26 start piphat
+2017-06-10 03:04:22,883 voron check_axis 17 acheck 1 []
+2017-06-10 03:04:22,884 voron check_axis 17 acheck 2 []
+2017-06-10 03:04:22,884 voron <module> 24 starting rtapi
+2017-06-10 03:04:22,885 voron <module> 26 rtapi should be started
+2017-06-10 03:04:22,887 voron check_axis 17 acheck 3 []
+2017-06-10 03:04:22,887 voron <module> 33 starting motion
+2017-06-10 03:04:22,898 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 03:04:22,899 voron <module> 37 motion should be started
+2017-06-10 03:04:22,929 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 03:04:22,929 voron <module> 40 done init
+2017-06-10 03:04:23,033 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-10 03:04:23,161 voron <module> 102 errorsignals are []
+2017-06-10 03:04:23,161 voron <module> 105 setting up estop
+2017-06-10 03:04:23,166 voron <module> 107 setting up tool loopback
+2017-06-10 03:04:23,171 voron <module> 122 starting server
+2017-06-10 03:04:23,274 voron <module> 124 server should  be started
+2017-06-10 03:04:23,736 run <module> 28 check_processes
+2017-06-10 03:04:23,736 run <module> 30 now loop
+2017-06-10 03:11:15,156 run <module> 18 check installation
+2017-06-10 03:11:15,166 run <module> 20 cleanup session
+2017-06-10 03:11:18,212 run <module> 22 make launcher
+2017-06-10 03:11:18,218 run <module> 24 config server
+2017-06-10 03:11:19,220 run <module> 26 start piphat
+2017-06-10 03:11:19,372 voron check_axis 17 acheck 1 []
+2017-06-10 03:11:19,373 voron check_axis 17 acheck 2 []
+2017-06-10 03:11:19,373 voron <module> 24 starting rtapi
+2017-06-10 03:11:19,374 voron <module> 26 rtapi should be started
+2017-06-10 03:11:19,377 voron check_axis 17 acheck 3 []
+2017-06-10 03:11:19,377 voron <module> 33 starting motion
+2017-06-10 03:11:19,385 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 03:11:19,385 voron <module> 37 motion should be started
+2017-06-10 03:11:19,521 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 03:11:19,521 voron <module> 40 done init
+2017-06-10 03:11:19,624 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-10 03:11:20,223 run <module> 28 check_processes
+2017-06-10 03:11:20,224 run <module> 30 now loop
+2017-06-10 03:11:50,987 run <module> 18 check installation
+2017-06-10 03:11:50,997 run <module> 20 cleanup session
+2017-06-10 03:11:53,535 run <module> 22 make launcher
+2017-06-10 03:11:53,540 run <module> 24 config server
+2017-06-10 03:11:54,543 run <module> 26 start piphat
+2017-06-10 03:11:54,701 voron check_axis 17 acheck 1 []
+2017-06-10 03:11:54,701 voron check_axis 17 acheck 2 []
+2017-06-10 03:11:54,701 voron <module> 24 starting rtapi
+2017-06-10 03:11:54,702 voron <module> 26 rtapi should be started
+2017-06-10 03:11:54,705 voron check_axis 17 acheck 3 []
+2017-06-10 03:11:54,705 voron <module> 33 starting motion
+2017-06-10 03:11:54,714 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 03:11:54,714 voron <module> 37 motion should be started
+2017-06-10 03:11:54,741 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 03:11:54,741 voron <module> 40 done init
+2017-06-10 03:11:54,843 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-10 03:11:55,545 run <module> 28 check_processes
+2017-06-10 03:11:55,545 run <module> 30 now loop
+2017-06-10 03:12:24,621 run <module> 18 check installation
+2017-06-10 03:12:24,628 run <module> 20 cleanup session
+2017-06-10 03:12:24,635 run <module> 22 make launcher
+2017-06-10 03:12:24,639 run <module> 24 config server
+2017-06-10 03:12:25,641 run <module> 26 start piphat
+2017-06-10 03:12:25,782 voron check_axis 17 acheck 1 []
+2017-06-10 03:12:25,783 voron check_axis 17 acheck 2 []
+2017-06-10 03:12:25,783 voron <module> 24 starting rtapi
+2017-06-10 03:12:25,784 voron <module> 26 rtapi should be started
+2017-06-10 03:12:25,787 voron check_axis 17 acheck 3 []
+2017-06-10 03:12:25,787 voron <module> 33 starting motion
+2017-06-10 03:12:25,797 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 03:12:25,797 voron <module> 37 motion should be started
+2017-06-10 03:12:25,832 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 03:12:25,832 voron <module> 40 done init
+2017-06-10 03:12:25,935 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-10 03:12:26,066 voron <module> 102 errorsignals are []
+2017-06-10 03:12:26,066 voron <module> 105 setting up estop
+2017-06-10 03:12:26,071 voron <module> 107 setting up tool loopback
+2017-06-10 03:12:26,075 voron <module> 122 starting server
+2017-06-10 03:12:26,177 voron <module> 124 server should  be started
+2017-06-10 03:12:26,644 run <module> 28 check_processes
+2017-06-10 03:12:26,644 run <module> 30 now loop
+2017-06-10 03:44:29,776 run <module> 18 check installation
+2017-06-10 03:44:29,784 run <module> 20 cleanup session
+2017-06-10 03:44:29,790 run <module> 22 make launcher
+2017-06-10 03:44:29,795 run <module> 24 config server
+2017-06-10 03:44:30,797 run <module> 26 start piphat
+2017-06-10 03:44:30,952 voron check_axis 17 acheck 1 []
+2017-06-10 03:44:30,953 voron check_axis 17 acheck 2 []
+2017-06-10 03:44:30,953 voron <module> 24 starting rtapi
+2017-06-10 03:44:30,955 voron <module> 26 rtapi should be started
+2017-06-10 03:44:30,957 voron check_axis 17 acheck 3 []
+2017-06-10 03:44:30,957 voron <module> 33 starting motion
+2017-06-10 03:44:30,966 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 03:44:30,966 voron <module> 37 motion should be started
+2017-06-10 03:44:31,132 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 03:44:31,132 voron <module> 40 done init
+2017-06-10 03:44:31,238 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-10 03:44:31,350 voron <module> 102 errorsignals are []
+2017-06-10 03:44:31,351 voron <module> 105 setting up estop
+2017-06-10 03:44:31,356 voron <module> 107 setting up tool loopback
+2017-06-10 03:44:31,362 voron <module> 122 starting server
+2017-06-10 03:44:31,464 voron <module> 124 server should  be started
+2017-06-10 03:44:31,801 run <module> 28 check_processes
+2017-06-10 03:44:31,801 run <module> 30 now loop
+2017-06-10 05:50:15,628 run <module> 18 check installation
+2017-06-10 05:50:15,641 run <module> 20 cleanup session
+2017-06-10 05:50:15,681 run <module> 22 make launcher
+2017-06-10 05:50:15,708 run <module> 24 config server
+2017-06-10 05:50:16,711 run <module> 26 start piphat
+2017-06-10 05:50:17,016 voron check_axis 17 acheck 1 []
+2017-06-10 05:50:17,017 voron check_axis 17 acheck 2 []
+2017-06-10 05:50:17,017 voron <module> 24 starting rtapi
+2017-06-10 05:50:17,019 voron <module> 26 rtapi should be started
+2017-06-10 05:50:17,023 voron check_axis 17 acheck 3 []
+2017-06-10 05:50:17,023 voron <module> 33 starting motion
+2017-06-10 05:50:17,031 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 05:50:17,031 voron <module> 37 motion should be started
+2017-06-10 05:50:17,166 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 05:50:17,166 voron <module> 40 done init
+2017-06-10 05:50:17,370 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-10 05:50:17,516 voron <module> 102 errorsignals are []
+2017-06-10 05:50:17,516 voron <module> 105 setting up estop
+2017-06-10 05:50:17,522 voron <module> 107 setting up tool loopback
+2017-06-10 05:50:17,528 voron <module> 122 starting server
+2017-06-10 05:50:17,633 voron <module> 124 server should  be started
+2017-06-10 05:50:17,715 run <module> 28 check_processes
+2017-06-10 05:50:17,715 run <module> 30 now loop
+2017-06-10 05:55:07,583 run <module> 18 check installation
+2017-06-10 05:55:07,625 run <module> 20 cleanup session
+2017-06-10 05:55:10,745 run <module> 22 make launcher
+2017-06-10 05:55:10,752 run <module> 24 config server
+2017-06-10 05:55:11,757 run <module> 26 start piphat
+2017-06-10 05:55:11,903 voron check_axis 17 acheck 1 []
+2017-06-10 05:55:11,903 voron check_axis 17 acheck 2 []
+2017-06-10 05:55:11,904 voron <module> 24 starting rtapi
+2017-06-10 05:55:11,905 voron <module> 26 rtapi should be started
+2017-06-10 05:55:11,907 voron check_axis 17 acheck 3 []
+2017-06-10 05:55:11,907 voron <module> 33 starting motion
+2017-06-10 05:55:11,915 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 05:55:11,915 voron <module> 37 motion should be started
+2017-06-10 05:55:12,053 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 05:55:12,053 voron <module> 40 done init
+2017-06-10 05:55:12,157 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-10 05:55:12,289 voron <module> 102 errorsignals are []
+2017-06-10 05:55:12,289 voron <module> 105 setting up estop
+2017-06-10 05:55:12,297 voron <module> 107 setting up tool loopback
+2017-06-10 05:55:12,303 voron <module> 122 starting server
+2017-06-10 05:55:12,405 voron <module> 124 server should  be started
+2017-06-10 05:55:12,760 run <module> 28 check_processes
+2017-06-10 05:55:12,760 run <module> 30 now loop
+2017-06-10 05:59:59,107 run <module> 18 check installation
+2017-06-10 05:59:59,114 run <module> 20 cleanup session
+2017-06-10 05:59:59,120 run <module> 22 make launcher
+2017-06-10 05:59:59,125 run <module> 24 config server
+2017-06-10 06:00:00,127 run <module> 26 start piphat
+2017-06-10 06:00:00,285 voron check_axis 17 acheck 1 []
+2017-06-10 06:00:00,286 voron check_axis 17 acheck 2 []
+2017-06-10 06:00:00,286 voron <module> 24 starting rtapi
+2017-06-10 06:00:00,288 voron <module> 26 rtapi should be started
+2017-06-10 06:00:00,291 voron check_axis 17 acheck 3 []
+2017-06-10 06:00:00,291 voron <module> 33 starting motion
+2017-06-10 06:00:00,305 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 06:00:00,305 voron <module> 37 motion should be started
+2017-06-10 06:00:00,439 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 06:00:00,439 voron <module> 40 done init
+2017-06-10 06:00:00,543 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-10 06:00:00,666 voron <module> 102 errorsignals are []
+2017-06-10 06:00:00,666 voron <module> 105 setting up estop
+2017-06-10 06:00:00,670 voron <module> 107 setting up tool loopback
+2017-06-10 06:00:00,676 voron <module> 122 starting server
+2017-06-10 06:00:00,782 voron <module> 124 server should  be started
+2017-06-10 06:00:01,131 run <module> 28 check_processes
+2017-06-10 06:00:01,132 run <module> 30 now loop
+2017-06-10 15:29:33,761 run <module> 18 check installation
+2017-06-10 15:29:33,767 run <module> 20 cleanup session
+2017-06-10 15:29:33,774 run <module> 22 make launcher
+2017-06-10 15:29:33,778 run <module> 24 config server
+2017-06-10 15:29:34,781 run <module> 26 start piphat
+2017-06-10 15:29:34,935 voron check_axis 17 acheck 1 []
+2017-06-10 15:29:34,935 voron check_axis 17 acheck 2 []
+2017-06-10 15:29:34,935 voron <module> 24 starting rtapi
+2017-06-10 15:29:34,937 voron <module> 26 rtapi should be started
+2017-06-10 15:29:34,939 voron check_axis 17 acheck 3 []
+2017-06-10 15:29:34,940 voron <module> 33 starting motion
+2017-06-10 15:29:34,954 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 15:29:34,954 voron <module> 37 motion should be started
+2017-06-10 15:29:35,110 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 15:29:35,110 voron <module> 40 done init
+2017-06-10 15:29:35,215 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-10 15:29:35,371 voron <module> 102 errorsignals are []
+2017-06-10 15:29:35,371 voron <module> 105 setting up estop
+2017-06-10 15:29:35,374 voron <module> 107 setting up tool loopback
+2017-06-10 15:29:35,380 voron <module> 122 starting server
+2017-06-10 15:29:35,484 voron <module> 124 server should  be started
+2017-06-10 15:29:35,788 run <module> 28 check_processes
+2017-06-10 15:29:35,789 run <module> 30 now loop
+2017-06-10 15:32:57,961 run <module> 18 check installation
+2017-06-10 15:32:57,968 run <module> 20 cleanup session
+2017-06-10 15:32:57,974 run <module> 22 make launcher
+2017-06-10 15:32:57,979 run <module> 24 config server
+2017-06-10 15:32:58,982 run <module> 26 start piphat
+2017-06-10 15:32:59,141 voron check_axis 17 acheck 1 []
+2017-06-10 15:32:59,141 voron check_axis 17 acheck 2 []
+2017-06-10 15:32:59,141 voron <module> 24 starting rtapi
+2017-06-10 15:32:59,142 voron <module> 26 rtapi should be started
+2017-06-10 15:32:59,145 voron check_axis 17 acheck 3 []
+2017-06-10 15:32:59,145 voron <module> 33 starting motion
+2017-06-10 15:32:59,157 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 15:32:59,157 voron <module> 37 motion should be started
+2017-06-10 15:32:59,294 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 15:32:59,294 voron <module> 40 done init
+2017-06-10 15:32:59,397 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-10 15:32:59,568 voron <module> 102 errorsignals are []
+2017-06-10 15:32:59,568 voron <module> 105 setting up estop
+2017-06-10 15:32:59,573 voron <module> 107 setting up tool loopback
+2017-06-10 15:32:59,580 voron <module> 122 starting server
+2017-06-10 15:32:59,686 voron <module> 124 server should  be started
+2017-06-10 15:32:59,987 run <module> 28 check_processes
+2017-06-10 15:32:59,987 run <module> 30 now loop
+2017-06-10 16:15:10,177 run <module> 18 check installation
+2017-06-10 16:15:10,185 run <module> 20 cleanup session
+2017-06-10 16:15:10,190 run <module> 22 make launcher
+2017-06-10 16:15:10,195 run <module> 24 config server
+2017-06-10 16:15:11,197 run <module> 26 start piphat
+2017-06-10 16:15:11,339 voron check_axis 17 acheck 1 []
+2017-06-10 16:15:11,339 voron check_axis 17 acheck 2 []
+2017-06-10 16:15:11,339 voron <module> 24 starting rtapi
+2017-06-10 16:15:11,341 voron <module> 26 rtapi should be started
+2017-06-10 16:15:11,343 voron check_axis 17 acheck 3 []
+2017-06-10 16:15:11,343 voron <module> 33 starting motion
+2017-06-10 16:15:11,357 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 16:15:11,357 voron <module> 37 motion should be started
+2017-06-10 16:15:11,598 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 16:15:11,599 voron <module> 40 done init
+2017-06-10 16:15:11,703 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-10 16:15:11,829 voron <module> 102 errorsignals are []
+2017-06-10 16:15:11,830 voron <module> 105 setting up estop
+2017-06-10 16:15:11,833 voron <module> 107 setting up tool loopback
+2017-06-10 16:15:11,837 voron <module> 122 starting server
+2017-06-10 16:15:11,942 voron <module> 124 server should  be started
+2017-06-10 16:15:12,202 run <module> 28 check_processes
+2017-06-10 16:15:12,202 run <module> 30 now loop
+2017-06-10 16:45:47,845 run <module> 18 check installation
+2017-06-10 16:45:47,853 run <module> 20 cleanup session
+2017-06-10 16:45:47,858 run <module> 22 make launcher
+2017-06-10 16:45:47,862 run <module> 24 config server
+2017-06-10 16:45:48,864 run <module> 26 start piphat
+2017-06-10 16:45:49,021 voron check_axis 17 acheck 1 []
+2017-06-10 16:45:49,021 voron check_axis 17 acheck 2 []
+2017-06-10 16:45:49,022 voron <module> 24 starting rtapi
+2017-06-10 16:45:49,023 voron <module> 26 rtapi should be started
+2017-06-10 16:45:49,025 voron check_axis 17 acheck 3 []
+2017-06-10 16:45:49,025 voron <module> 33 starting motion
+2017-06-10 16:45:49,034 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 16:45:49,034 voron <module> 37 motion should be started
+2017-06-10 16:45:49,191 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 16:45:49,191 voron <module> 40 done init
+2017-06-10 16:45:49,295 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-10 16:45:49,404 voron <module> 102 errorsignals are []
+2017-06-10 16:45:49,404 voron <module> 105 setting up estop
+2017-06-10 16:45:49,407 voron <module> 107 setting up tool loopback
+2017-06-10 16:45:49,411 voron <module> 122 starting server
+2017-06-10 16:45:49,514 voron <module> 124 server should  be started
+2017-06-10 16:45:49,870 run <module> 28 check_processes
+2017-06-10 16:45:49,871 run <module> 30 now loop
+2017-06-10 18:16:23,186 run <module> 18 check installation
+2017-06-10 18:16:23,193 run <module> 20 cleanup session
+2017-06-10 18:16:23,198 run <module> 22 make launcher
+2017-06-10 18:16:23,203 run <module> 24 config server
+2017-06-10 18:16:24,205 run <module> 26 start piphat
+2017-06-10 18:16:24,352 voron check_axis 17 acheck 1 []
+2017-06-10 18:16:24,352 voron check_axis 17 acheck 2 []
+2017-06-10 18:16:24,352 voron <module> 24 starting rtapi
+2017-06-10 18:16:24,355 voron <module> 26 rtapi should be started
+2017-06-10 18:16:24,360 voron check_axis 17 acheck 3 []
+2017-06-10 18:16:24,360 voron <module> 33 starting motion
+2017-06-10 18:16:24,374 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 18:16:24,375 voron <module> 37 motion should be started
+2017-06-10 18:16:24,413 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 18:16:24,413 voron <module> 40 done init
+2017-06-10 18:16:24,517 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-10 18:16:24,680 voron <module> 102 errorsignals are []
+2017-06-10 18:16:24,680 voron <module> 105 setting up estop
+2017-06-10 18:16:24,688 voron <module> 107 setting up tool loopback
+2017-06-10 18:16:24,694 voron <module> 122 starting server
+2017-06-10 18:16:24,798 voron <module> 124 server should  be started
+2017-06-10 18:16:25,209 run <module> 28 check_processes
+2017-06-10 18:16:25,209 run <module> 30 now loop
+2017-06-10 19:02:56,974 run <module> 18 check installation
+2017-06-10 19:02:56,982 run <module> 20 cleanup session
+2017-06-10 19:02:56,987 run <module> 22 make launcher
+2017-06-10 19:02:56,991 run <module> 24 config server
+2017-06-10 19:02:57,994 run <module> 26 start piphat
+2017-06-10 19:02:58,132 voron check_axis 17 acheck 1 []
+2017-06-10 19:02:58,132 voron check_axis 17 acheck 2 []
+2017-06-10 19:02:58,132 voron <module> 24 starting rtapi
+2017-06-10 19:02:58,134 voron <module> 26 rtapi should be started
+2017-06-10 19:02:58,136 voron check_axis 17 acheck 3 []
+2017-06-10 19:02:58,137 voron <module> 33 starting motion
+2017-06-10 19:02:58,145 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 19:02:58,146 voron <module> 37 motion should be started
+2017-06-10 19:02:58,408 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 19:02:58,408 voron <module> 40 done init
+2017-06-10 19:02:58,513 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-10 19:02:58,633 voron <module> 102 errorsignals are []
+2017-06-10 19:02:58,633 voron <module> 105 setting up estop
+2017-06-10 19:02:58,639 voron <module> 107 setting up tool loopback
+2017-06-10 19:02:58,643 voron <module> 122 starting server
+2017-06-10 19:02:58,748 voron <module> 124 server should  be started
+2017-06-10 19:02:59,001 run <module> 28 check_processes
+2017-06-10 19:02:59,002 run <module> 30 now loop
+2017-06-10 19:15:50,146 run <module> 18 check installation
+2017-06-10 19:15:50,152 run <module> 20 cleanup session
+2017-06-10 19:15:50,158 run <module> 22 make launcher
+2017-06-10 19:15:50,162 run <module> 24 config server
+2017-06-10 19:15:51,165 run <module> 26 start piphat
+2017-06-10 19:15:51,962 voron check_axis 17 acheck 1 []
+2017-06-10 19:15:52,002 voron check_axis 17 acheck 2 []
+2017-06-10 19:15:52,002 voron <module> 24 starting rtapi
+2017-06-10 19:15:52,005 voron <module> 26 rtapi should be started
+2017-06-10 19:15:52,011 voron check_axis 17 acheck 3 []
+2017-06-10 19:15:52,012 voron <module> 33 starting motion
+2017-06-10 19:15:52,026 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 19:15:52,026 voron <module> 37 motion should be started
+2017-06-10 19:15:52,170 run <module> 28 check_processes
+2017-06-10 19:15:52,171 run <module> 30 now loop
+2017-06-10 19:15:52,269 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 19:15:52,269 voron <module> 40 done init
+2017-06-10 19:15:52,374 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-10 19:15:52,538 voron <module> 102 errorsignals are []
+2017-06-10 19:15:52,538 voron <module> 105 setting up estop
+2017-06-10 19:15:52,546 voron <module> 107 setting up tool loopback
+2017-06-10 19:17:02,370 run <module> 18 check installation
+2017-06-10 19:17:02,379 run <module> 20 cleanup session
+2017-06-10 19:17:02,384 run <module> 22 make launcher
+2017-06-10 19:17:02,390 run <module> 24 config server
+2017-06-10 19:17:03,393 run <module> 26 start piphat
+2017-06-10 19:17:03,543 voron check_axis 17 acheck 1 []
+2017-06-10 19:17:03,545 voron check_axis 17 acheck 2 []
+2017-06-10 19:17:03,545 voron <module> 24 starting rtapi
+2017-06-10 19:17:03,546 voron <module> 26 rtapi should be started
+2017-06-10 19:17:03,549 voron check_axis 17 acheck 3 []
+2017-06-10 19:17:03,549 voron <module> 33 starting motion
+2017-06-10 19:17:03,557 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 19:17:03,557 voron <module> 37 motion should be started
+2017-06-10 19:17:03,589 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-10 19:17:03,589 voron <module> 40 done init
+2017-06-10 19:17:03,693 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-10 19:17:03,842 voron <module> 102 errorsignals are []
+2017-06-10 19:17:03,843 voron <module> 105 setting up estop
+2017-06-10 19:17:03,848 voron <module> 107 setting up tool loopback
+2017-06-10 19:17:03,852 voron <module> 122 starting server
+2017-06-10 19:17:03,955 voron <module> 124 server should  be started
+2017-06-10 19:17:04,398 run <module> 28 check_processes
+2017-06-10 19:17:04,398 run <module> 30 now loop
+2017-06-11 03:02:47,171 run <module> 18 check installation
+2017-06-11 03:02:47,224 run <module> 20 cleanup session
+2017-06-11 03:02:47,229 run <module> 22 make launcher
+2017-06-11 03:02:47,233 run <module> 24 config server
+2017-06-11 03:02:48,238 run <module> 26 start piphat
+2017-06-11 03:02:48,594 voron check_axis 17 acheck 1 []
+2017-06-11 03:02:48,594 voron check_axis 17 acheck 2 []
+2017-06-11 03:02:48,594 voron <module> 24 starting rtapi
+2017-06-11 03:02:48,596 voron <module> 26 rtapi should be started
+2017-06-11 03:02:48,598 voron check_axis 17 acheck 3 []
+2017-06-11 03:02:48,598 voron <module> 33 starting motion
+2017-06-11 03:02:48,607 voron check_axis 17 acheck 4 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-11 03:02:48,607 voron <module> 37 motion should be started
+2017-06-11 03:02:48,801 voron check_axis 17 acheck 5 ['axis.0.joint-pos-cmd', 'axis.0.joint-pos-fb', 'axis.0.joint-vel-cmd']
+2017-06-11 03:02:48,802 voron <module> 40 done init
+2017-06-11 03:02:48,907 voron <module> 54 fans 1 extruders 1 lights 0
+2017-06-11 03:02:49,004 voron <module> 102 errorsignals are []
+2017-06-11 03:02:49,004 voron <module> 105 setting up estop
+2017-06-11 03:02:49,008 voron <module> 107 setting up tool loopback
+2017-06-11 03:02:49,011 voron <module> 122 starting server
+2017-06-11 03:02:49,116 voron <module> 124 server should  be started
+2017-06-11 03:02:49,243 run <module> 28 check_processes
+2017-06-11 03:02:49,243 run <module> 30 now loop

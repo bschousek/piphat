@@ -25,7 +25,7 @@ def init_hardware():
     watchList = []
     #rt=rtapi.RTAPIcommand()
     
-    rt.newinst('pp_gpio','hpg','pincount=6')
+    rt.newinst('pp_gpio','hpg','pincount=8')
     rt.newinst('pp_stepgen','hps','pincount=5')
     #rt.newinst('mult2v2', 'smult', 'pincount=5')
     #rt.newinst('div2v2', 'sdiv', 'pincount=5')
@@ -62,17 +62,22 @@ def init_hardware():
 
 
 def setup_hardware(thread):
-    opins=[6,12,22,23,24,25]
+    opins=[6,12,22,23,24,25,18,27]
     for n, pin in enumerate(opins):
         haladdr='hpg.%02i' %n
         hal.Pin(haladdr+'.bcm').set(pin)
         hal.Pin(haladdr+'.pinmode').set(1)
-    hal.Pin('hpg.00.invert').set(True)
-    hal.Pin('hpg.01.invert').set(True)
+    #hal.Pin('hpg.00.invert').set(True)
+    #hal.Pin('hpg.01.invert').set(True)
+    hal.Pin('hpg.00.dowrite').set(False)
+    hal.Pin('hpg.01.dowrite').set(False)
     hal.Pin('hpg.02.dowrite').set(False)
     hal.Pin('hpg.03.dowrite').set(False)
     hal.Pin('hpg.04.dowrite').set(False)
     hal.Pin('hpg.05.dowrite').set(False)
+    hal.Pin('hpg.06.dowrite').set(False)
+    hal.Pin('hpg.07.dowrite').set(False)
+
 
     # Stepper
     hal.Pin('hpg.05.output').link('axesenable')
@@ -80,6 +85,8 @@ def setup_hardware(thread):
     hal.Pin('hps.00.dirpin').set(6)
     hal.Pin('hps.01.steppin').set(24)
     hal.Pin('hps.01.dirpin').set(23)
+    hal.Pin('hps.02.steppin').set(18)
+    hal.Pin('hps.02.dirpin').set(27)
     # hal.Pin('hpg.stepgen.02.steppin').set(819)
     # hal.Pin('hpg.stepgen.02.dirpin').set(818)
     # hal.Pin('hpg.stepgen.03.steppin').set(916)
