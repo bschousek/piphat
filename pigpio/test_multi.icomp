@@ -1,0 +1,35 @@
+component test_multi "Raspberry PI digital output for Machinekit via pigpio library";
+    // Input Pins
+
+
+pin in float #.inpin[pincount];
+pin out float #.outpin[pincount];
+
+instanceparam int pincount = 2;
+option MAXCOUNT 4;
+
+license "GPL";
+author "Brian Schousek";
+
+function _;
+/*function one_wave ;*/
+
+
+
+;;
+
+FUNCTION(_) {
+	int i;
+	//l	int wave[local_pincount];
+	for (i=0 ; i<local_pincount ; i++) {
+		if (_inpin(i) != 0) {
+			_outpin(i)=1/_inpin(i);
+		}
+		else {
+			_outpin(i)=456;
+		}
+	
+	}
+	return 0;
+}
+

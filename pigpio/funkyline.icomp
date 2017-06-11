@@ -1,0 +1,17 @@
+component funkyline "See if the line numbers are correct in a compile";
+
+pin in unsigned signal_to_hal;
+
+function _;
+license "GPL" ;
+;;
+FUNCTION(_) {
+	int foo1, foo2, bar, baz;
+	//incorrectly try and set a value to see what line number the error gets reported as
+	signal_to_hal=1;
+	foo1=1;
+	foo2=13;
+	bar=3;
+	baz=7;
+	return 0;
+}

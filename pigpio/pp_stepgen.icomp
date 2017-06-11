@@ -4,18 +4,20 @@ component pp_stepgen "Raspberry PI digital output for Machinekit via pigpio libr
 
 
 pin in bit ##.enable[pincount];
-pin in unsigned ##.dirpin[pincount];
-pin in unsigned ##.steppin[pincount];
 pin in float ##.velocity_cmd[pincount];
-pin in float ##.poscmd[pincount];
+pin in float ##.position-cmd[pincount];
 pin out float ##.position-fb[pincount];
-pin out unsigned ##.step_period[pincount];
-pin out unsigned ##.step_count[pincount];
+pin io float ##.motor-pos[pincount];
+
 pin out float ##.debug_1[pincount];
 pin out float ##.debug_2[pincount];
 pin out float ##.debug_3[pincount];
-pin io float ##.motor-pos[pincount];
 
+pin out unsigned ##.step_period[pincount];
+pin out unsigned ##.step_count[pincount];
+
+pin in unsigned ##.dirpin[pincount];
+pin in unsigned ##.steppin[pincount];
 pin io bit new_wave=0;
 pin io unsigned periodns=1000000;
 pin io unsigned pi_instance;
@@ -64,18 +66,23 @@ FUNCTION(_) {
 	float this_scale;
 	float curpos;
 	int direction;
+	int my_steppin;
+	int my_dirpin;
+
+
 
 	
 	wave_diff=0;
 	for (i=0; i<local_pincount ; i++) {
-		if (_poscmd(i) != _position_fb(i)) wave_diff++;
-		//current_position[i]=_poscmd(i);unsigned
+		//if (_position_cmd(i) != _position_fb(i)) wave_diff++;
+		if(_velocity_cmd(i) != 0) wave_diff++;
+		//current_position[i]=_position_cmd(i);unsigned
 	}
-	wave_diff=1;
+	//wave_diff=1;
 	
 	if (wave_diff) {
 
-		rtapi_print_msg(RTAPI_MSG_DBG, "hw rev %x pp version %x pp if version %x", get_hardware_revision(pi_instance), get_pigpio_version(pi_instance), pigpiod_if_version());
+		//rtapi_print_msg(RTAPI_MSG_DBG, "hw rev %x pp version %x pp if version %x", get_hardware_revision(pi_instance), get_pigpio_version(pi_instance), pigpiod_if_version());
 
 		wave_clear(pi_instance);
 		for (i=0 ; i<local_pincount ; i++) {
@@ -83,6 +90,8 @@ FUNCTION(_) {
 			this_scale=_position_scale(i);
 			direction= (thisvel>=0)? 1: 0;
 			thisvel=abs(thisvel);
+			my_steppin=_steppin(i);
+			my_dirpin=_dirpin(i);
 
 			
 			if (thisvel != 0) {
@@ -97,22 +106,22 @@ FUNCTION(_) {
 				_debug_2(i)=mystep_count;
 				_debug_3(i)=mystep_period;
 				
-				//mystep_period=(int) mystep_period;
+				//mystep_period=(int) ymstep_period;
 				//mystep_count=(int) mystep_count;
 				_step_period(i)=(int) mystep_period;
 				_step_count(i)=(int) mystep_count;
-				//_position_fb(i) = _poscmd(i);
+				//_position_fb(i) = _position_cmd(i);
 				curpos=_motor_pos(i);
 				
 				if (direction==1) {
 					_motor_pos(i)=curpos+(int) mystep_count;
 					wavebuild[0]=(gpioPulse_t){0,0,15};
-					wavebuild[1]=(gpioPulse_t){1<<_dirpin(i),0,15};
+					wavebuild[1]=(gpioPulse_t){1<<my_dirpin,0,15};
 				}
 				else {
 					_motor_pos(i)=curpos-(int) mystep_count;
 					wavebuild[0]=(gpioPulse_t){0,0,15};
-					wavebuild[1]=(gpioPulse_t){0, 1<<_dirpin(i),15};
+					wavebuild[1]=(gpioPulse_t){0, 1<<my_dirpin,15};
 				}
 				
 				_position_fb(i)=_motor_pos(i)/_position_scale(i);
@@ -120,8 +129,8 @@ FUNCTION(_) {
 				
 				for (n=0; n<mystep_count; n++) {
 					//rtapi_print_msg(RTAPI_MSG_DBG, "wave add n %i count %i period %i",n,mystep_count, mystep_period);
-					wavebuild[2*(n+1)]=(gpioPulse_t){1<<_steppin(i), 0,15};
-					wavebuild[2*(n+1)+1]=(gpioPulse_t){0, 1<<_steppin(i), (int) mystep_period-15};
+					wavebuild[2*(n+1)]=(gpioPulse_t){1<<my_steppin, 0,15};
+					wavebuild[2*(n+1)+1]=(gpioPulse_t){0, 1<<my_steppin, (int) mystep_period-15};
 				}
 					//wave_result=wave_add_generic(pi_instance, mystep_count*2, wavebuild);
 				wave_result=wave_add_generic(pi_instance, mystep_count*2, wavebuild);
@@ -133,21 +142,21 @@ FUNCTION(_) {
 		}
 			wave=wave_create(pi_instance);
 			//wave_result=wave_send_once(pi_instance, wave);
-			rtapi_print_msg(RTAPI_MSG_DBG, "wave max us %i actual us %i",wave_get_max_micros(pi_instance),wave_get_micros(pi_instance));
-			rtapi_print_msg(RTAPI_MSG_DBG, "wave max pulse %i actual pulse %i",wave_get_max_pulses(pi_instance),wave_get_pulses(pi_instance));
-			rtapi_print_msg(RTAPI_MSG_DBG, "wave max cbs %i actual cbs %i",wave_get_max_cbs(pi_instance),wave_get_cbs(pi_instance));
+			//rtapi_print_msg(RTAPI_MSG_DBG, "wave max us %i actual us %i",wave_get_max_micros(pi_instance),wave_get_micros(pi_instance));
+			//rtapi_print_msg(RTAPI_MSG_DBG, "wave max pulse %i actual pulse %i",wave_get_max_pulses(pi_instance),wave_get_pulses(pi_instance));
+			//rtapi_print_msg(RTAPI_MSG_DBG, "wave max cbs %i actual cbs %i",wave_get_max_cbs(pi_instance),wave_get_cbs(pi_instance));
 
 			//wave_result=wave_send_repeat(pi_instance, wave);
 			wave_result=wave_send_once(pi_instance, wave);
 			wave_delete(pi_instance, a_wave_id);
 			a_wave_id=wave_result;
 			
-			rtapi_print_msg(RTAPI_MSG_DBG, "wave result %i",wave_result);
+			//rtapi_print_msg(RTAPI_MSG_DBG, "wave result %i",wave_result);
 
 		//if (wave_result >0) {
 		if (0) {
 			for (i=0; i<local_pincount ; i++) {
-				_position_fb(i) = _poscmd(i);
+				_position_fb(i) = _position_cmd(i);
 		
 			}
 	

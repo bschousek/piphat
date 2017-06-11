@@ -1,0 +1,5 @@
+obj-m += pp_instance.o
+include /usr/share/linuxcnc/Makefile.modinc
+EXTRA_CFLAGS += -I/home/vagrant/Documents/piphat/pigpio
+EXTRA_CFLAGS += -I/home/vagrant/Documents/piphat/pigpio
+LDFLAGS = -lpigpiod_if2

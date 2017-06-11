@@ -1,0 +1,4 @@
+{ global : 
+rtapi_app_main;
+rtapi_app_exit;
+local : * ; };

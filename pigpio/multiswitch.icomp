@@ -1,0 +1,47 @@
+component multiswitch           """This component toggles between a specified number of output bits""";
+
+pin in bit up = false           "Receives signal to toggle up";
+pin in bit down = false         "Receives signal to toggle down";
+
+param rw unsigned top-position  "Number of positions";
+param rw signed position      "Current state (may be set in the HAL)";
+
+pin out bit bit-##[pincount] = false       "Output bits";
+
+instanceparam int pincount = 6;
+
+option MAXCOUNT 16;
+
+function _ ;
+option extra_inst_setup yes;
+
+variable int old_up = 0;
+variable int old_down = 0;
+
+author "ArcEye arceye@mgware.co.uk / Andy Pugh andy@bodgesoc.org";
+license "GPL2";
+;;
+
+FUNCTION(_)
+{
+    int i;
+
+    // debounce
+    if (up && !old_up) { position++; }
+    if (down && !old_down) { position--;}
+    old_up = up;
+    old_down = down;
+
+    if (position < 0) position = top_position;
+    if (position > top_position) position = 0;
+
+    for (i = 0 ; i < local_pincount; i++){
+        bit(i) = (i == position);
+    }
+
+}
+
+EXTRA_INST_SETUP(){
+    top_position = local_pincount - 1;
+    return 0;
+}

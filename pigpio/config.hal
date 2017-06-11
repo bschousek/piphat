@@ -1,0 +1,18 @@
+# components
+loadrt pp_dout 
+loadrt pp_instance 
+loadrt threads name1=fast fp1=0 period1=50000 name2=slow period2=1000000 
+
+# signals
+
+# nets
+net pi_instance => LED.pi-instance
+net pi_instance => axes_enable.pi-instance
+net pi_instance <= pp_instance.0.pi-instance
+
+# parameter values
+
+# realtime thread/function links
+addf LED.write slow
+addf axes_enable.write slow
+

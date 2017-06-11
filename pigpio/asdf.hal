@@ -1,0 +1,14 @@
+# components
+loadrt pp_dout 
+loadrt pp_instance 
+loadrt threads name1=fast fp1=0 period1=50000 name2=slow period2=1000000 
+
+# signals
+
+# nets
+
+# parameter values
+
+# realtime thread/function links
+addf pp_dout.0.write slow
+
